@@ -5,14 +5,15 @@ Hannover). Es hat nichts mit anderen Kundenprojekten der Agentur zu tun – kein
 Farben oder Zugangsdaten aus anderen Projekten übernehmen.
 
 - **Live-Domain:** https://dennis-landwehr.com
-- **GitHub:** Repository `Dennis-Landwehr-MLP-Website` (privat)
+- **GitHub:** `CL-Concepts/Dennis-Landwehr-MLP-Website` (privat)
 - **Hosting:** Vercel – deployt automatisch bei jedem Push/Merge auf `main`
 - **Lokaler Ordner:** `~/Developer/agentur/kunden/dennis-landwehr/website`
 - **Material (nicht im Git):** `~/Developer/agentur/kunden/dennis-landwehr/material`
 
 > ⚠️ **Aktueller Sonderzustand:** Die Live-Seite ist seit 21.07.2026 im **Wartungsmodus**
-> (`src/middleware.ts` beantwortet alle Anfragen mit Status 503). Diese Datei **nicht** ändern oder
-> löschen, ohne dass es ausdrücklich verlangt wird – das Löschen schaltet die Website wieder live.
+> (`src/middleware.ts` beantwortet alle Anfragen mit Status 503). **Bleibt auf Wunsch bis auf Weiteres
+> aktiv** (bestätigt 24.09.2026). Datei nicht ändern oder löschen, ohne dass es ausdrücklich verlangt
+> wird – das Löschen schaltet die Website wieder live.
 
 ## Stack
 
@@ -110,6 +111,4 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 
 - `src/middleware.ts`: In Next.js 16 heißt die Datei offiziell `proxy.ts`; `middleware.ts`
   funktioniert noch (veraltet). Nicht ungefragt umbenennen.
-- `src/components/sections/Hero 2.tsx` ist eine unversionierte Kopie (vermutlich Finder/iCloud-Duplikat).
-  Wird nirgends importiert. Nicht committen; Entscheidung über Löschen liegt beim Inhaber.
 - Bilder von Unsplash sind in `next.config.ts` freigegeben (`images.remotePatterns`).
