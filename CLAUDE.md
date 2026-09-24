@@ -112,3 +112,12 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 - `src/middleware.ts`: In Next.js 16 heißt die Datei offiziell `proxy.ts`; `middleware.ts`
   funktioniert noch (veraltet). Nicht ungefragt umbenennen.
 - Bilder von Unsplash sind in `next.config.ts` freigegeben (`images.remotePatterns`).
+
+## Beschlossene nächste Schritte (24.09.2026)
+
+- **TinaCMS wird eingeführt.** Dennis darf alles bearbeiten, was im Frontend sichtbar ist (Texte,
+  Bilder, Grafiken) – aber **keine Seiten anlegen oder löschen** (`allowedActions: { create: false, delete: false }`).
+- **Wartungsmodus-Ausnahmen:** `/admin` und Vorschau-Deployments (`VERCEL_ENV !== "production"`)
+  werden vom Wartungsmodus ausgenommen; die öffentliche Seite bleibt gesperrt.
+- **Hosting:** Vercel-Team „CL Concepts“ mit Pro-Tarif (kommerzielle Nutzung).
+- **Domain:** `dennis-landwehr.com` liegt bei **Strato**, verwaltet über das Konto von CL Concepts – bleibt so.

@@ -47,7 +47,8 @@ Längerer Wartungsmodus (Wochen) schadet dem Google-Ranking; 503 ist nur für ku
 
 ## Domain & SSL
 
-- Domain `dennis-landwehr.com` zeigt per DNS auf Vercel; SSL-Zertifikat stellt Vercel automatisch aus.
+- Domain `dennis-landwehr.com` ist bei **Strato** registriert (Konto CL Concepts) und zeigt per DNS auf Vercel; SSL stellt Vercel automatisch aus.
+- Bei Strato nur die Web-Einträge (A/CNAME) ändern – MX/SPF/DKIM/DMARC nie anfassen.
 - Verwaltung: Vercel → Projekt → *Settings → Domains*.
 
 ## Logs
