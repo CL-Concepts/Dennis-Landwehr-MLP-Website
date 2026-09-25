@@ -20,7 +20,7 @@ Farben oder Zugangsdaten aus anderen Projekten übernehmen.
 - Next.js 16 (App Router), React 19, TypeScript
 - Tailwind CSS v4 (Konfiguration über `src/app/globals.css` + `@tailwindcss/postcss`)
 - Jest + Testing Library (`src/__tests__`)
-- ESLint 9 (Flat Config), Prettier
+- ESLint 9 (Flat Config, identisch mit CL Concepts), Prettier
 - **Kein CMS.** Alle Inhalte stehen im Code (siehe unten). Der Kunde bearbeitet nichts selbst.
 - Node **22** (`.nvmrc`)
 
@@ -32,7 +32,7 @@ npm run dev          # http://localhost:3000
 npm run lint
 npm run typecheck
 npm test
-npm run build        # Produktionsbuild
+npm run build:local  # Produktionsbuild lokal (identischer Befehl in allen Projekten)
 npm run format       # Prettier
 ```
 
@@ -78,7 +78,7 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 
 - **Bestehende Komponenten wiederverwenden** (`components/ui`, `components/sections`), bevor neue entstehen.
 - Änderungen **so klein und nachvollziehbar wie möglich**. Keine Umbauten „nebenbei“.
-- Nach jeder Code-Änderung: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`.
+- Nach jeder Code-Änderung: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build:local`.
 - Keine neuen Abhängigkeiten ohne Rückfrage (vorher Zweck und Alternative nennen).
 - Bestehende, fachlich unabhängige Probleme nicht ungefragt „mitreparieren“ – nur benennen.
 
@@ -98,6 +98,13 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 - Commit-Nachrichten: `typ: kurze Beschreibung auf Deutsch` (z. B. `fix: Telefonnummer im Footer korrigiert`).
 - Keine destruktiven Befehle (`push --force`, `reset --hard`, Branch löschen) ohne ausdrückliche Zustimmung.
 - Details: `docs/git-workflow.md`.
+
+### Automatische Prüfung (CI)
+
+- `.github/workflows/ci.yml` ist **in allen Agentur-Projekten identisch** – nur gemeinsam ändern.
+- Läuft bei jedem Pull Request und auf `main`: `npm ci` → `lint` → `typecheck` → `test` → `build:local`.
+- Braucht keine Secrets. Ein Pull Request wird erst gemergt, wenn der Check **„Prüfung“ grün** ist.
+- Schlägt er fehl: auf GitHub im Pull Request → _Details_ → fehlgeschlagenen Schritt öffnen.
 
 ### Deployment
 

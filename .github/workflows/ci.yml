@@ -1,0 +1,41 @@
+# Automatische Prüfung – identisch in allen Agentur-Projekten.
+# Läuft bei jedem Pull Request und bei jedem Stand auf main.
+# Braucht keine Secrets: gebaut wird mit den Inhalten aus dem Repository.
+name: Prüfung
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pruefung:
+    name: Lint, Typecheck, Tests, Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Tests
+        run: npm test
+
+      - name: Build
+        run: npm run build:local

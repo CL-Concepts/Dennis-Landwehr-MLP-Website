@@ -27,6 +27,8 @@ eigene Vorschau-URL – das ist die Testumgebung.
 4. Committen und _Publish branch_ / _Push_.
 5. Auf GitHub **Pull Request** öffnen – die Vorlage mit Checkliste erscheint automatisch.
 6. Vercel-Vorschau im Pull Request öffnen und prüfen.
+   Außerdem muss der automatische Check **„Prüfung“** im Pull Request grün sein
+   (Lint, Typecheck, Tests, Build – siehe `.github/workflows/ci.yml`).
 7. **Merge** → geht live. Branch danach löschen (GitHub bietet den Button an).
 
 ## Commit-Nachrichten
