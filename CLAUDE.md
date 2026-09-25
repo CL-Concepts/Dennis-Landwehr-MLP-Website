@@ -7,8 +7,8 @@ Farben oder Zugangsdaten aus anderen Projekten übernehmen.
 - **Live-Domain:** https://dennis-landwehr.com
 - **GitHub:** `CL-Concepts/Dennis-Landwehr-MLP-Website` (privat)
 - **Hosting:** Vercel – deployt automatisch bei jedem Push/Merge auf `main`
-- **Lokaler Ordner:** `~/Developer/agentur/kunden/dennis-landwehr/website`
-- **Material (nicht im Git):** `~/Developer/agentur/kunden/dennis-landwehr/material`
+- **Lokaler Ordner:** `~/Desktop/Developer.nosync/agentur/kunden/dennis-landwehr/website`
+- **Material (nicht im Git):** `~/Desktop/Developer.nosync/agentur/kunden/dennis-landwehr/material`
 
 > ⚠️ **Aktueller Sonderzustand:** Die Live-Seite ist seit 21.07.2026 im **Wartungsmodus**
 > (`src/middleware.ts` beantwortet alle Anfragen mit Status 503). **Bleibt auf Wunsch bis auf Weiteres
