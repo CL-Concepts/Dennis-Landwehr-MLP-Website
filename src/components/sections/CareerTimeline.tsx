@@ -24,7 +24,10 @@ export default function CareerTimeline() {
 
         {/* Desktop: horizontale klickbare Timeline */}
         <div className="hidden md:block relative mb-10" role="tablist" aria-label="Karrierephasen">
-          <div className="absolute top-8 left-0 right-0 h-1 bg-border rounded-full" aria-hidden="true" />
+          <div
+            className="absolute top-8 left-0 right-0 h-1 bg-border rounded-full"
+            aria-hidden="true"
+          />
           <div
             className="absolute top-8 left-0 h-1 bg-primary rounded-full transition-all duration-500 ease-out"
             style={{ width: `${progress}%` }}
@@ -120,7 +123,10 @@ export default function CareerTimeline() {
                   key={topic}
                   className="inline-flex items-center gap-2 bg-white border border-border rounded-lg px-3 py-2 text-sm text-foreground"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-warm flex-shrink-0" aria-hidden="true" />
+                  <span
+                    className="w-1.5 h-1.5 rounded-full bg-warm flex-shrink-0"
+                    aria-hidden="true"
+                  />
                   {topic}
                 </li>
               ))}
@@ -131,8 +137,19 @@ export default function CareerTimeline() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-primary-hover transition-colors min-h-[44px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus"
               >
                 {activePhase.hrefLabel}
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                <svg
+                  className="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
                 </svg>
               </Link>
               {activeIndex < careerPhases.length - 1 && (
@@ -142,8 +159,19 @@ export default function CareerTimeline() {
                   className="inline-flex items-center justify-center gap-1 text-sm font-semibold text-primary hover:text-primary-hover transition-colors min-h-[44px] px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus rounded"
                 >
                   Nächste Phase ansehen
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  <svg
+                    className="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
                   </svg>
                 </button>
               )}

@@ -83,8 +83,8 @@ export default function ImpressumPage() {
             <div>
               <h2 className="text-base font-bold text-navy mb-2">MLP Finanzberatung SE</h2>
               <p>
-                Dennis Landwehr ist als Finanzberater für die MLP Finanzberatung SE tätig.
-                Weitere Informationen finden Sie auf dem{" "}
+                Dennis Landwehr ist als Finanzberater für die MLP Finanzberatung SE tätig. Weitere
+                Informationen finden Sie auf dem{" "}
                 <a
                   href={siteConfig.mlpProfileUrl}
                   target="_blank"
@@ -100,7 +100,10 @@ export default function ImpressumPage() {
 
             <div>
               <h2 className="text-base font-bold text-navy mb-2">Haftungsausschluss</h2>
-              <p>[Platzhalter: Haftungsausschluss für Inhalte, Links und Urheberrecht – vor Veröffentlichung juristisch prüfen lassen]</p>
+              <p>
+                [Platzhalter: Haftungsausschluss für Inhalte, Links und Urheberrecht – vor
+                Veröffentlichung juristisch prüfen lassen]
+              </p>
             </div>
           </div>
         </div>

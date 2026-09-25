@@ -7,9 +7,7 @@ type LegalNoticeProps = {
 export default function LegalNotice({ compact = false }: LegalNoticeProps) {
   if (compact) {
     return (
-      <p className="text-xs text-muted border-l-2 border-border pl-3">
-        {legalTexts.disclaimer}
-      </p>
+      <p className="text-xs text-muted border-l-2 border-border pl-3">{legalTexts.disclaimer}</p>
     );
   }
 

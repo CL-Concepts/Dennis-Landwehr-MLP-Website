@@ -69,7 +69,10 @@ export default function LiquiditaetsmanagementPage() {
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { title: "Laufende Ausgaben", desc: "Miete, Versicherungen, Lebenshaltung" },
-              { title: "Notfallreserve", desc: "Kurzfristig verfügbar, 3–6 Monatsausgaben als Orientierung" },
+              {
+                title: "Notfallreserve",
+                desc: "Kurzfristig verfügbar, 3–6 Monatsausgaben als Orientierung",
+              },
               { title: "Mittelfristige Rücklagen", desc: "Geplante Ausgaben, Anschaffungen" },
               { title: "Langfristiger Aufbau", desc: "Altersvorsorge, Investitionen, Vermögen" },
             ].map((item) => (
@@ -80,13 +83,15 @@ export default function LiquiditaetsmanagementPage() {
             ))}
           </div>
           <p className="mt-4 text-sm text-muted">
-            Variable Einkommen – etwa durch Bereitschaftsdienste oder Nebentätigkeiten –
-            erschweren die Planung. Hier hilft ein Durchschnittswert als Planungsgrundlage.
+            Variable Einkommen – etwa durch Bereitschaftsdienste oder Nebentätigkeiten – erschweren
+            die Planung. Hier hilft ein Durchschnittswert als Planungsgrundlage.
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-4">Betriebliche Liquidität in der Praxis</h2>
+          <h2 className="text-xl font-bold text-navy mb-4">
+            Betriebliche Liquidität in der Praxis
+          </h2>
           <p className="mb-4">
             Praxen haben eigene Zahlungsrhythmen und Kostenstrukturen. Eine funktionierende
             betriebliche Liquiditätsplanung berücksichtigt:
@@ -106,17 +111,15 @@ export default function LiquiditaetsmanagementPage() {
             ))}
           </ul>
           <p className="mt-4 text-sm text-muted bg-surface border border-border rounded-lg p-3">
-            <strong className="text-navy">Hinweis:</strong> Steuerliche und
-            buchhalterische Fragen zur Praxis sollten in enger Abstimmung mit einem Steuerberater
-            geklärt werden. Die Finanzberatung kann die Gesamtstruktur unterstützen, ersetzt aber
-            keine steuerliche Fachberatung.
+            <strong className="text-navy">Hinweis:</strong> Steuerliche und buchhalterische Fragen
+            zur Praxis sollten in enger Abstimmung mit einem Steuerberater geklärt werden. Die
+            Finanzberatung kann die Gesamtstruktur unterstützen, ersetzt aber keine steuerliche
+            Fachberatung.
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">
-            Trennung von privat und betrieblich
-          </h2>
+          <h2 className="text-xl font-bold text-navy mb-3">Trennung von privat und betrieblich</h2>
           <p>
             Eine klare Trennung von privatem und betrieblichem Konto ist der erste Schritt zu
             finanzieller Übersicht. Regelmäßige, vorab festgelegte Privatentnahmen schaffen
@@ -127,7 +130,9 @@ export default function LiquiditaetsmanagementPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Liquiditätsplanung vor der Niederlassung</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Liquiditätsplanung vor der Niederlassung
+          </h2>
           <p>
             Die Niederlassung bringt einen erheblichen Liquiditätsbedarf mit sich –
             Praxisausstattung, Mietkaution, erste Gehaltsauszahlungen, bevor eigene Einnahmen

@@ -64,17 +64,18 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 
 ## Wo ändere ich was?
 
-| Wunsch | Datei |
-|---|---|
-| Telefon, E-Mail, Adresse, Termin-Link | `src/config/site.ts` |
-| Leistungstexte | `src/config/services.ts` bzw. `src/app/leistungen/*/page.tsx` |
-| FAQ | `src/content/faqs.ts` |
-| Rechtstexte | `src/content/legal.ts`, `src/app/impressum`, `datenschutz`, `rechtliche-hinweise` |
-| Menü | `src/config/navigation.ts` |
+| Wunsch                                | Datei                                                                             |
+| ------------------------------------- | --------------------------------------------------------------------------------- |
+| Telefon, E-Mail, Adresse, Termin-Link | `src/config/site.ts`                                                              |
+| Leistungstexte                        | `src/config/services.ts` bzw. `src/app/leistungen/*/page.tsx`                     |
+| FAQ                                   | `src/content/faqs.ts`                                                             |
+| Rechtstexte                           | `src/content/legal.ts`, `src/app/impressum`, `datenschutz`, `rechtliche-hinweise` |
+| Menü                                  | `src/config/navigation.ts`                                                        |
 
 ## Regeln für Claude Code
 
 ### Allgemein
+
 - **Bestehende Komponenten wiederverwenden** (`components/ui`, `components/sections`), bevor neue entstehen.
 - Änderungen **so klein und nachvollziehbar wie möglich**. Keine Umbauten „nebenbei“.
 - Nach jeder Code-Änderung: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`.
@@ -82,6 +83,7 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 - Bestehende, fachlich unabhängige Probleme nicht ungefragt „mitreparieren“ – nur benennen.
 
 ### Inhalte / Compliance (Finanzberatung!)
+
 - Dennis ist **MLP-Berater**. Aussagen zu Produkten, Renditen, Versicherungen, Steuer oder Recht
   nicht erfinden oder zuspitzen. Neue fachliche Aussagen immer als „Freigabe durch Dennis/MLP nötig“ markieren.
 - `siteConfig.legalNotice.pendingReview` ist `true`: Rechtstexte sind **ungeprüfte Platzhalter**.
@@ -90,6 +92,7 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 - Kein Tracking/Analytics ohne Einwilligungslösung und angepasste Datenschutzerklärung.
 
 ### Git
+
 - `main` = **Production**. Jeder Merge auf `main` geht sofort live (Vercel).
 - **Nie direkt auf `main` committen.** Arbeiten in Branches: `feature/…`, `fix/…`, `chore/…`, `docs/…`.
 - Commit-Nachrichten: `typ: kurze Beschreibung auf Deutsch` (z. B. `fix: Telefonnummer im Footer korrigiert`).
@@ -97,12 +100,14 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 - Details: `docs/git-workflow.md`.
 
 ### Deployment
+
 - **Niemals ungefragt Production verändern** – also nicht auf `main` pushen/mergen, keinen Vercel-Deploy
   auslösen und nichts am Vercel-Projekt ändern, ohne dass es ausdrücklich verlangt wird.
 - Jeder Branch bekommt bei Vercel automatisch eine Vorschau-URL – dort prüfen, dann mergen.
 - Rollback: `docs/deployment.md`.
 
 ### Sicherheit & Umgebungsvariablen
+
 - Das Projekt nutzt derzeit **keine** Umgebungsvariablen (siehe `.env.example`, `docs/environments.md`).
 - Nie Secrets, Tokens oder Passwörter in Code, Commits oder Doku schreiben. `.env*` ist ignoriert.
 - Security-Header stehen in `next.config.ts` – nicht abschwächen.

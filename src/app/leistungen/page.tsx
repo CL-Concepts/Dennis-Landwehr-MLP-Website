@@ -56,7 +56,9 @@ export default function LeistungenPage() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-navy mb-2">Ärztinnen und Ärzte im Berufseinstieg</h3>
+              <h3 className="font-semibold text-navy mb-2">
+                Ärztinnen und Ärzte im Berufseinstieg
+              </h3>
               <p>
                 PKV vs. GKV, Berufsunfähigkeit, erste Rücklagen – der Berufseinstieg bringt viele
                 neue Finanzfragen mit sich.

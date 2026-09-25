@@ -7,24 +7,24 @@ https://dennis-landwehr.com. Deshalb wird auf `main` nie direkt gearbeitet.
 
 ## Branches
 
-| Branch | Zweck | Beispiel |
-|---|---|---|
-| `main` | Production | – |
-| `feature/…` | neue Inhalte oder Funktionen | `feature/neue-leistung-praxisgruendung` |
-| `fix/…` | Fehlerbehebung | `fix/telefonnummer-footer` |
-| `chore/…` | Wartung, Updates, Konfiguration | `chore/next-update` |
-| `docs/…` | nur Dokumentation | `docs/rollback-anleitung` |
+| Branch      | Zweck                           | Beispiel                                |
+| ----------- | ------------------------------- | --------------------------------------- |
+| `main`      | Production                      | –                                       |
+| `feature/…` | neue Inhalte oder Funktionen    | `feature/neue-leistung-praxisgruendung` |
+| `fix/…`     | Fehlerbehebung                  | `fix/telefonnummer-footer`              |
+| `chore/…`   | Wartung, Updates, Konfiguration | `chore/next-update`                     |
+| `docs/…`    | nur Dokumentation               | `docs/rollback-anleitung`               |
 
 Einen dauerhaften `staging`-Branch gibt es **nicht**. Stattdessen erzeugt Vercel für jeden Branch eine
 eigene Vorschau-URL – das ist die Testumgebung.
 
 ## Ablauf einer Änderung
 
-1. `main` aktualisieren (GitHub Desktop: *Fetch origin* → *Pull*).
-2. Neuen Branch anlegen (GitHub Desktop: *Current Branch → New Branch*).
+1. `main` aktualisieren (GitHub Desktop: _Fetch origin_ → _Pull_).
+2. Neuen Branch anlegen (GitHub Desktop: _Current Branch → New Branch_).
 3. Änderung mit Claude Code umsetzen; lokal prüfen:
    `npm run lint && npm run typecheck && npm test && npm run build`
-4. Committen und *Publish branch* / *Push*.
+4. Committen und _Publish branch_ / _Push_.
 5. Auf GitHub **Pull Request** öffnen – die Vorlage mit Checkliste erscheint automatisch.
 6. Vercel-Vorschau im Pull Request öffnen und prüfen.
 7. **Merge** → geht live. Branch danach löschen (GitHub bietet den Button an).

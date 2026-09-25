@@ -44,7 +44,10 @@ export default function KrankenversicherungPage() {
       atAGlance={[
         { label: "Für wen relevant", value: "Studierende, Angestellte, Niedergelassene" },
         { label: "Wann prüfen", value: "Studienende, Anstellungswechsel, Niederlassung" },
-        { label: "Themen im Gespräch", value: "GKV/PKV, Leistungen, Familienplanung, Krankentagegeld" },
+        {
+          label: "Themen im Gespräch",
+          value: "GKV/PKV, Leistungen, Familienplanung, Krankentagegeld",
+        },
         { label: "Nächster Schritt", value: "Persönliches Gespräch" },
       ]}
       faqs={faqs}
@@ -59,19 +62,21 @@ export default function KrankenversicherungPage() {
           <h2 className="text-xl font-bold text-navy mb-3">GKV und PKV – Grundlagen</h2>
           <p className="mb-3">
             In Deutschland besteht für die meisten Arbeitnehmer zunächst Pflicht zur gesetzlichen
-            Krankenversicherung (GKV). Wer über der sogenannten Jahresarbeitsentgeltgrenze
-            verdient, kann sich alternativ privat versichern (PKV). Selbstständige – darunter
-            niedergelassene Ärztinnen und Ärzte – können von Anfang an frei wählen.
+            Krankenversicherung (GKV). Wer über der sogenannten Jahresarbeitsentgeltgrenze verdient,
+            kann sich alternativ privat versichern (PKV). Selbstständige – darunter niedergelassene
+            Ärztinnen und Ärzte – können von Anfang an frei wählen.
           </p>
           <p>
-            Beide Systeme haben eigene Logiken, Stärken und Schwächen. Die Entscheidung sollte
-            nicht allein am kurzfristigen Beitrag ausgerichtet sein, sondern auch die langfristige
+            Beide Systeme haben eigene Logiken, Stärken und Schwächen. Die Entscheidung sollte nicht
+            allein am kurzfristigen Beitrag ausgerichtet sein, sondern auch die langfristige
             Beitragsentwicklung, Familienplanung und berufliche Perspektiven berücksichtigen.
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Für Studierende der Medizin und Zahnmedizin</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Für Studierende der Medizin und Zahnmedizin
+          </h2>
           <p className="mb-3">Für Studierende stellen sich typischerweise folgende Fragen:</p>
           <ul className="space-y-2 ml-4">
             {[
@@ -89,7 +94,9 @@ export default function KrankenversicherungPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Für angestellte Ärztinnen und Zahnärzte</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Für angestellte Ärztinnen und Zahnärzte
+          </h2>
           <p className="mb-3">
             Mit dem Berufseinstieg entstehen neue Entscheidungspunkte. Relevant sind unter anderem:
           </p>
@@ -110,19 +117,23 @@ export default function KrankenversicherungPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Für Praxisinhaber und Niedergelassene</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Für Praxisinhaber und Niedergelassene
+          </h2>
           <p>
             Niedergelassene Ärztinnen, Ärzte, Zahnärztinnen und Zahnärzte sind nicht
             versicherungspflichtig und treffen die Wahl zwischen GKV und PKV in vollem Umfang
             eigenverantwortlich. Neben dem Leistungsumfang ist das Krankentagegeld ein besonders
             wichtiges Thema: Bei längerer Erkrankung laufen Praxiskosten weiter, während kein
-            Einkommen fließt. Wie hoch das Krankentagegeld bemessen sein sollte, ergibt sich aus
-            den individuellen Betriebskosten und dem Privatbedarf.
+            Einkommen fließt. Wie hoch das Krankentagegeld bemessen sein sollte, ergibt sich aus den
+            individuellen Betriebskosten und dem Privatbedarf.
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Langfristige Perspektive statt kurzfristiger Vergleich</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Langfristige Perspektive statt kurzfristiger Vergleich
+          </h2>
           <p>
             Die Krankenversicherungsentscheidung sollte nicht allein auf den aktuellen Monatsbeitrag
             reduziert werden. Wichtige Faktoren für eine fundierte Betrachtung sind die

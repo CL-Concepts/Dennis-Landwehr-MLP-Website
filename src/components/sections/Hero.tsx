@@ -79,15 +79,29 @@ export default function Hero() {
                 href="/#rechner"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold text-primary bg-white border border-primary rounded-lg hover:bg-secondary transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus min-h-[44px]"
               >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                <svg
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={1.8}
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                  />
                 </svg>
                 Zu den Rechnern
               </Link>
             </div>
 
             {/* Trust Indicators */}
-            <ul className="animate-fade-up animate-delay-400 space-y-2" aria-label="Leistungsmerkmale">
+            <ul
+              className="animate-fade-up animate-delay-400 space-y-2"
+              aria-label="Leistungsmerkmale"
+            >
               {trustIndicators.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-sm text-muted">
                   <span className="w-5 h-5 bg-warm rounded-full flex items-center justify-center flex-shrink-0">
@@ -99,7 +113,11 @@ export default function Hero() {
                       strokeWidth={3}
                       aria-hidden="true"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
                     </svg>
                   </span>
                   {item}
@@ -124,7 +142,10 @@ export default function Hero() {
             {/* Floating card */}
             <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-card p-4 border border-border max-w-[210px]">
               <p className="flex items-center gap-2 text-xs text-muted font-medium">
-                <span className="w-2 h-2 rounded-full bg-teal animate-pulse-dot flex-shrink-0" aria-hidden="true" />
+                <span
+                  className="w-2 h-2 rounded-full bg-teal animate-pulse-dot flex-shrink-0"
+                  aria-hidden="true"
+                />
                 Beratung verfügbar
               </p>
               <p className="text-sm font-semibold text-navy mt-1">Digital &amp; persönlich</p>

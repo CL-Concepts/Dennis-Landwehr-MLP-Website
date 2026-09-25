@@ -75,13 +75,13 @@ export default function Header() {
                 {item.children ? (
                   <>
                     <button
-                      onClick={() =>
-                        setOpenDropdown(openDropdown === item.href ? null : item.href)
-                      }
+                      onClick={() => setOpenDropdown(openDropdown === item.href ? null : item.href)}
                       aria-expanded={openDropdown === item.href}
                       aria-haspopup="true"
                       className={`flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg hover:bg-surface transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus ${
-                        isActive(item.href) ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+                        isActive(item.href)
+                          ? "text-primary font-semibold"
+                          : "text-foreground hover:text-primary"
                       }`}
                     >
                       {item.label}
@@ -129,7 +129,9 @@ export default function Header() {
                     href={item.href}
                     aria-current={isActive(item.href) ? "page" : undefined}
                     className={`px-4 py-2 text-sm font-medium rounded-lg hover:bg-surface transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus block ${
-                      isActive(item.href) ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+                      isActive(item.href)
+                        ? "text-primary font-semibold"
+                        : "text-foreground hover:text-primary"
                     }`}
                   >
                     {item.label}
@@ -155,12 +157,30 @@ export default function Header() {
             className="md:hidden flex items-center justify-center w-11 h-11 rounded-lg text-navy hover:bg-surface transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus"
           >
             {mobileOpen ? (
-              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+              <svg
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                aria-hidden="true"
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               </svg>
             )}
           </button>

@@ -71,8 +71,8 @@ export default function ServicePageLayout({
             {/* Autor + Datum */}
             <div className="mt-6 pt-4 border-t border-border flex flex-wrap gap-4 text-xs text-muted">
               <span>
-                Autor: <strong className="text-foreground">Dennis Landwehr</strong>,{" "}
-                Finanzberater bei MLP
+                Autor: <strong className="text-foreground">Dennis Landwehr</strong>, Finanzberater
+                bei MLP
               </span>
               {updatedAt && (
                 <span>
