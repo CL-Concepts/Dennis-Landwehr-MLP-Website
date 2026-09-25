@@ -1,37 +1,46 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# =====================================================================
+# Gemeinsame Basis aller Agentur-Projekte (Stand: Stufe 1, 09/2026)
+# =====================================================================
 
-# dependencies
+# Abhängigkeiten
 /node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
 
-# testing
-/coverage
-
-# next.js
+# Next.js / Build-Ausgaben
 /.next/
 /out/
-
-# production
 /build
+next-env.d.ts
+*.tsbuildinfo
 
-# misc
-.DS_Store
+# Tests
+/coverage
+
+# Umgebungsvariablen – NIE committen. Nur die Vorlage .env.example gehört ins Git.
+.env
+.env.*
+!.env.example
+
+# Hosting-Verknüpfungen (lokal, enthalten Projekt-IDs)
+.vercel
+
+# Lokale Claude-Code-Einstellungen (persönliche Freigaben)
+.claude/settings.local.json
+
+# Zertifikate / Schlüssel
 *.pem
+*.key
 
-# debug
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
-.env
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Betriebssystem / Editor
+.DS_Store
+Thumbs.db
+*.icloud
+.vscode/
+.idea/
