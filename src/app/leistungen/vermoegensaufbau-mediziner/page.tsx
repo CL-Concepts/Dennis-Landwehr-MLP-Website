@@ -103,7 +103,9 @@ export default function VermoegensaufbauPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Versorgungswerk und ergänzende Vorsorge</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Versorgungswerk und ergänzende Vorsorge
+          </h2>
           <p>
             Das Versorgungswerk der Ärzte- und Zahnärztekammern ist die berufsständische
             Pflichtvorsorge für approbierte Heilberufe. Die erwartbare Rentenleistung hängt von
@@ -126,10 +128,10 @@ export default function VermoegensaufbauPage() {
         <div>
           <h2 className="text-xl font-bold text-navy mb-3">Keine Renditeversprechen</h2>
           <p>
-            Wertentwicklungen der Vergangenheit sind kein Indikator für künftige Ergebnisse.
-            Seriöse Finanzberatung arbeitet mit Szenarien, nicht mit Garantien. Das Ziel ist ein
-            Konzept, das zu deiner Situation passt – nicht eines, das auf optimistischen
-            Hochrechnungen beruht.
+            Wertentwicklungen der Vergangenheit sind kein Indikator für künftige Ergebnisse. Seriöse
+            Finanzberatung arbeitet mit Szenarien, nicht mit Garantien. Das Ziel ist ein Konzept,
+            das zu deiner Situation passt – nicht eines, das auf optimistischen Hochrechnungen
+            beruht.
           </p>
         </div>
       </div>

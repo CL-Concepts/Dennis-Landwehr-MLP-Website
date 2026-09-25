@@ -15,21 +15,21 @@ npm run dev
 
 ## Verfügbare Seiten
 
-| Seite | URL |
-|-------|-----|
-| Startseite | `/` |
-| Leistungen | `/leistungen` |
-| Berufshaftpflicht | `/leistungen/berufshaftpflicht-mediziner` |
-| Krankenversicherung | `/leistungen/krankenversicherung-mediziner` |
-| Berufsunfähigkeit | `/leistungen/berufsunfaehigkeit-mediziner` |
-| Vermögensaufbau | `/leistungen/vermoegensaufbau-mediziner` |
+| Seite                 | URL                                            |
+| --------------------- | ---------------------------------------------- |
+| Startseite            | `/`                                            |
+| Leistungen            | `/leistungen`                                  |
+| Berufshaftpflicht     | `/leistungen/berufshaftpflicht-mediziner`      |
+| Krankenversicherung   | `/leistungen/krankenversicherung-mediziner`    |
+| Berufsunfähigkeit     | `/leistungen/berufsunfaehigkeit-mediziner`     |
+| Vermögensaufbau       | `/leistungen/vermoegensaufbau-mediziner`       |
 | Liquiditätsmanagement | `/leistungen/liquiditaetsmanagement-mediziner` |
-| Für Studierende | `/studierende` |
-| Über mich | `/ueber-mich` |
-| Kontakt | `/kontakt` |
-| Impressum | `/impressum` |
-| Datenschutz | `/datenschutz` |
-| Rechtliche Hinweise | `/rechtliche-hinweise` |
+| Für Studierende       | `/studierende`                                 |
+| Über mich             | `/ueber-mich`                                  |
+| Kontakt               | `/kontakt`                                     |
+| Impressum             | `/impressum`                                   |
+| Datenschutz           | `/datenschutz`                                 |
+| Rechtliche Hinweise   | `/rechtliche-hinweise`                         |
 
 ## Befehle
 

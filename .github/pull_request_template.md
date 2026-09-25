@@ -17,10 +17,12 @@
 
 ## Geprüft
 
+<!-- Der automatische Check „Prüfung“ macht Lint, Typecheck, Tests und Build noch einmal auf GitHub. -->
+
 - [ ] `npm run lint`
 - [ ] `npm run typecheck`
 - [ ] `npm test`
-- [ ] `npm run build`
+- [ ] `npm run build:local`
 - [ ] Vercel-Vorschau dieses Branches angesehen (Link: …)
 - [ ] Mobil geprüft (≈ 390 px Breite)
 

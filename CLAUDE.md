@@ -20,7 +20,7 @@ Farben oder Zugangsdaten aus anderen Projekten übernehmen.
 - Next.js 16 (App Router), React 19, TypeScript
 - Tailwind CSS v4 (Konfiguration über `src/app/globals.css` + `@tailwindcss/postcss`)
 - Jest + Testing Library (`src/__tests__`)
-- ESLint 9 (Flat Config), Prettier
+- ESLint 9 (Flat Config, identisch mit CL Concepts), Prettier
 - **Kein CMS.** Alle Inhalte stehen im Code (siehe unten). Der Kunde bearbeitet nichts selbst.
 - Node **22** (`.nvmrc`)
 
@@ -32,7 +32,7 @@ npm run dev          # http://localhost:3000
 npm run lint
 npm run typecheck
 npm test
-npm run build        # Produktionsbuild
+npm run build:local  # Produktionsbuild lokal (identischer Befehl in allen Projekten)
 npm run format       # Prettier
 ```
 
@@ -64,24 +64,26 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 
 ## Wo ändere ich was?
 
-| Wunsch | Datei |
-|---|---|
-| Telefon, E-Mail, Adresse, Termin-Link | `src/config/site.ts` |
-| Leistungstexte | `src/config/services.ts` bzw. `src/app/leistungen/*/page.tsx` |
-| FAQ | `src/content/faqs.ts` |
-| Rechtstexte | `src/content/legal.ts`, `src/app/impressum`, `datenschutz`, `rechtliche-hinweise` |
-| Menü | `src/config/navigation.ts` |
+| Wunsch                                | Datei                                                                             |
+| ------------------------------------- | --------------------------------------------------------------------------------- |
+| Telefon, E-Mail, Adresse, Termin-Link | `src/config/site.ts`                                                              |
+| Leistungstexte                        | `src/config/services.ts` bzw. `src/app/leistungen/*/page.tsx`                     |
+| FAQ                                   | `src/content/faqs.ts`                                                             |
+| Rechtstexte                           | `src/content/legal.ts`, `src/app/impressum`, `datenschutz`, `rechtliche-hinweise` |
+| Menü                                  | `src/config/navigation.ts`                                                        |
 
 ## Regeln für Claude Code
 
 ### Allgemein
+
 - **Bestehende Komponenten wiederverwenden** (`components/ui`, `components/sections`), bevor neue entstehen.
 - Änderungen **so klein und nachvollziehbar wie möglich**. Keine Umbauten „nebenbei“.
-- Nach jeder Code-Änderung: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`.
+- Nach jeder Code-Änderung: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build:local`.
 - Keine neuen Abhängigkeiten ohne Rückfrage (vorher Zweck und Alternative nennen).
 - Bestehende, fachlich unabhängige Probleme nicht ungefragt „mitreparieren“ – nur benennen.
 
 ### Inhalte / Compliance (Finanzberatung!)
+
 - Dennis ist **MLP-Berater**. Aussagen zu Produkten, Renditen, Versicherungen, Steuer oder Recht
   nicht erfinden oder zuspitzen. Neue fachliche Aussagen immer als „Freigabe durch Dennis/MLP nötig“ markieren.
 - `siteConfig.legalNotice.pendingReview` ist `true`: Rechtstexte sind **ungeprüfte Platzhalter**.
@@ -90,19 +92,29 @@ docs/                  Projektdokumentation (Architektur, Deployment, Git, Umgeb
 - Kein Tracking/Analytics ohne Einwilligungslösung und angepasste Datenschutzerklärung.
 
 ### Git
+
 - `main` = **Production**. Jeder Merge auf `main` geht sofort live (Vercel).
 - **Nie direkt auf `main` committen.** Arbeiten in Branches: `feature/…`, `fix/…`, `chore/…`, `docs/…`.
 - Commit-Nachrichten: `typ: kurze Beschreibung auf Deutsch` (z. B. `fix: Telefonnummer im Footer korrigiert`).
 - Keine destruktiven Befehle (`push --force`, `reset --hard`, Branch löschen) ohne ausdrückliche Zustimmung.
 - Details: `docs/git-workflow.md`.
 
+### Automatische Prüfung (CI)
+
+- `.github/workflows/ci.yml` ist **in allen Agentur-Projekten identisch** – nur gemeinsam ändern.
+- Läuft bei jedem Pull Request und auf `main`: `npm ci` → `lint` → `typecheck` → `test` → `build:local`.
+- Braucht keine Secrets. Ein Pull Request wird erst gemergt, wenn der Check **„Prüfung“ grün** ist.
+- Schlägt er fehl: auf GitHub im Pull Request → _Details_ → fehlgeschlagenen Schritt öffnen.
+
 ### Deployment
+
 - **Niemals ungefragt Production verändern** – also nicht auf `main` pushen/mergen, keinen Vercel-Deploy
   auslösen und nichts am Vercel-Projekt ändern, ohne dass es ausdrücklich verlangt wird.
 - Jeder Branch bekommt bei Vercel automatisch eine Vorschau-URL – dort prüfen, dann mergen.
 - Rollback: `docs/deployment.md`.
 
 ### Sicherheit & Umgebungsvariablen
+
 - Das Projekt nutzt derzeit **keine** Umgebungsvariablen (siehe `.env.example`, `docs/environments.md`).
 - Nie Secrets, Tokens oder Passwörter in Code, Commits oder Doku schreiben. `.env*` ist ignoriert.
 - Security-Header stehen in `next.config.ts` – nicht abschwächen.

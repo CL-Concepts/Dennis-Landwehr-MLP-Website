@@ -42,7 +42,10 @@ export default function ConsultingProcess() {
                 />
               )}
               <div className="relative z-10">
-                <div className="text-5xl font-bold text-blue-800 mb-4 select-none" aria-hidden="true">
+                <div
+                  className="text-5xl font-bold text-blue-800 mb-4 select-none"
+                  aria-hidden="true"
+                >
                   {step.number}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>

@@ -60,23 +60,23 @@ export default function BerufsunfaehigkeitPage() {
     >
       <div className="space-y-8">
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Warum ist die Arbeitskraft so wichtig?</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Warum ist die Arbeitskraft so wichtig?
+          </h2>
           <p>
             Für Ärztinnen, Ärzte, Zahnärztinnen und Zahnärzte ist das zukünftige Arbeitseinkommen
-            das bedeutendste Vermögen – besonders in den ersten Berufsjahren, wenn noch kaum
-            anderes Vermögen aufgebaut wurde. Wer nicht mehr in seinem Beruf arbeiten kann,
-            verliert dieses Einkommen. Sozialstaatliche Absicherungen decken dies in der Regel nur
-            sehr begrenzt.
+            das bedeutendste Vermögen – besonders in den ersten Berufsjahren, wenn noch kaum anderes
+            Vermögen aufgebaut wurde. Wer nicht mehr in seinem Beruf arbeiten kann, verliert dieses
+            Einkommen. Sozialstaatliche Absicherungen decken dies in der Regel nur sehr begrenzt.
           </p>
         </div>
 
         <div>
           <h2 className="text-xl font-bold text-navy mb-3">Frühe Absicherung im Studium</h2>
           <p className="mb-3">
-            Je früher eine Berufsunfähigkeitsversicherung abgeschlossen wird, desto günstiger
-            sind in der Regel die Beiträge. Zudem ist die Gesundheitsprüfung im Studium meist
-            einfacher, da kaum Vorerkrankungen vorliegen. Mögliche Vorteile einer frühen
-            Absicherung:
+            Je früher eine Berufsunfähigkeitsversicherung abgeschlossen wird, desto günstiger sind
+            in der Regel die Beiträge. Zudem ist die Gesundheitsprüfung im Studium meist einfacher,
+            da kaum Vorerkrankungen vorliegen. Mögliche Vorteile einer frühen Absicherung:
           </p>
           <ul className="space-y-2 ml-4">
             {[
@@ -99,8 +99,8 @@ export default function BerufsunfaehigkeitPage() {
             Im Anstellungsverhältnis gilt: Das Versorgungswerk bietet zwar eine Grundabsicherung,
             aber ob und wie viel es im Falle einer Berufsunfähigkeit leistet, hängt von der
             Einzahldauer und den konkreten Bedingungen des jeweiligen Versorgungswerks ab.
-            Ergänzende Absicherung schließt mögliche Versorgungslücken. Die Absicherungshöhe
-            sollte dabei an das Einkommen und die laufenden Kosten angepasst sein.
+            Ergänzende Absicherung schließt mögliche Versorgungslücken. Die Absicherungshöhe sollte
+            dabei an das Einkommen und die laufenden Kosten angepasst sein.
           </p>
         </div>
 
@@ -108,22 +108,24 @@ export default function BerufsunfaehigkeitPage() {
           <h2 className="text-xl font-bold text-navy mb-3">Besonderheiten in der Zahnmedizin</h2>
           <p>
             Zahnärztliche Tätigkeit ist körperlich anspruchsvoll: Feinmotorik, dauerhafte
-            Anspannung, Ergonomie und der Umgang mit Substanzen und Materialien belasten den
-            Körper langfristig. Erkrankungen der Hände, Handgelenke, Schultern oder der
-            Wirbelsäule können zu einer frühzeitigen Einschränkung führen. Eine
-            Berufsunfähigkeitsversicherung für Zahnärztinnen und Zahnärzte sollte die konkrete
-            Tätigkeit als Maßstab für die Leistungsprüfung heranziehen.
+            Anspannung, Ergonomie und der Umgang mit Substanzen und Materialien belasten den Körper
+            langfristig. Erkrankungen der Hände, Handgelenke, Schultern oder der Wirbelsäule können
+            zu einer frühzeitigen Einschränkung führen. Eine Berufsunfähigkeitsversicherung für
+            Zahnärztinnen und Zahnärzte sollte die konkrete Tätigkeit als Maßstab für die
+            Leistungsprüfung heranziehen.
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Absicherungshöhe individuell bestimmen</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Absicherungshöhe individuell bestimmen
+          </h2>
           <p>
             Wie hoch die monatliche Berufsunfähigkeitsrente sein sollte, ergibt sich aus den
             persönlichen Lebenshaltungskosten, bestehenden Absicherungen und dem angestrebten
-            Versorgungsniveau. Faustregel kann es hier nicht geben. Relevant ist, welche Kosten
-            im Versicherungsfall gedeckt sein müssen – und welche anderen Leistungen (z. B. aus
-            dem Versorgungswerk) daneben bestehen.
+            Versorgungsniveau. Faustregel kann es hier nicht geben. Relevant ist, welche Kosten im
+            Versicherungsfall gedeckt sein müssen – und welche anderen Leistungen (z. B. aus dem
+            Versorgungswerk) daneben bestehen.
           </p>
         </div>
       </div>

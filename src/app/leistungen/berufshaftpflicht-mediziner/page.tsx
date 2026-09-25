@@ -63,8 +63,8 @@ export default function BerufshaftpflichtPage() {
             Die Berufshaftpflichtversicherung sichert Ärztinnen und Ärzte sowie Zahnärztinnen und
             Zahnärzte gegen Schadensersatzansprüche ab, die aus ihrer beruflichen Tätigkeit
             entstehen. Dazu gehören etwa Behandlungsfehler, Fehler bei der Aufklärung oder
-            fehlerhafte Dokumentation. Ohne ausreichende Absicherung können Forderungen existenzbedrohend
-            sein.
+            fehlerhafte Dokumentation. Ohne ausreichende Absicherung können Forderungen
+            existenzbedrohend sein.
           </p>
         </div>
 
@@ -118,7 +118,9 @@ export default function BerufshaftpflichtPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-navy mb-3">Für Praxisinhaber und Niedergelassene</h2>
+          <h2 className="text-xl font-bold text-navy mb-3">
+            Für Praxisinhaber und Niedergelassene
+          </h2>
           <p className="mb-3">
             In der eigenen Praxis trägst du nicht nur Verantwortung für deine eigene Tätigkeit,
             sondern auch für die deiner angestellten Mitarbeitenden. Relevante Punkte im Gespräch
@@ -145,9 +147,9 @@ export default function BerufshaftpflichtPage() {
           <p>
             Human- und Zahnmedizin unterscheiden sich in Tätigkeitsprofil und Risikobild. Für
             Zahnärztinnen und Zahnärzte sind unter anderem prothesenprothetische, chirurgische und
-            implantologische Eingriffe relevant. Für Humanmediziner variieren die Anforderungen stark
-            nach Fachrichtung. Die konkret benötigte Absicherung ergibt sich aus der tatsächlichen
-            Tätigkeit – pauschale Aussagen sind hier nicht sinnvoll.
+            implantologische Eingriffe relevant. Für Humanmediziner variieren die Anforderungen
+            stark nach Fachrichtung. Die konkret benötigte Absicherung ergibt sich aus der
+            tatsächlichen Tätigkeit – pauschale Aussagen sind hier nicht sinnvoll.
           </p>
         </div>
       </div>

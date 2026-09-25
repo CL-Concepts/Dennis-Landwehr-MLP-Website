@@ -24,12 +24,7 @@ export default function FAQ({
   return (
     <section className="py-16 md:py-24 bg-white" aria-labelledby={headingId}>
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          id={headingId}
-          as="h2"
-          title={title}
-          className="mb-12"
-        />
+        <SectionHeading id={headingId} as="h2" title={title} className="mb-12" />
         <div className="max-w-3xl mx-auto divide-y divide-border">
           {faqs.map((faq) => {
             const isOpen = openId === faq.id;
@@ -68,7 +63,9 @@ export default function FAQ({
                       aria-hidden={!isOpen}
                       className="pb-5"
                     >
-                      <p className="text-muted leading-relaxed text-sm md:text-base">{faq.answer}</p>
+                      <p className="text-muted leading-relaxed text-sm md:text-base">
+                        {faq.answer}
+                      </p>
                     </div>
                   </div>
                 </div>

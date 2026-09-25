@@ -20,14 +20,14 @@ den Code, Vercel baut und veröffentlicht ihn automatisch.
 
 ## Bausteine
 
-| Teil | Wo | Wozu |
-|---|---|---|
-| Next.js 16 | `src/app` | erzeugt die Seiten |
-| Stammdaten | `src/config/site.ts` | Name, Kontakt, Termin-Link, Domain – an **einer** Stelle |
-| Inhalte | `src/config/*.ts`, `src/content/*.ts` | Leistungen, FAQ, Rechtstexte |
-| Wartungsmodus | `src/middleware.ts` | fängt alle Anfragen ab → Status 503 |
-| Tests | `src/__tests__` | prüfen Konfiguration, Termin-Links, strukturierte Daten |
-| Hosting | Vercel | Build, SSL, Auslieferung, Vorschau-URLs, Rollback |
+| Teil          | Wo                                    | Wozu                                                     |
+| ------------- | ------------------------------------- | -------------------------------------------------------- |
+| Next.js 16    | `src/app`                             | erzeugt die Seiten                                       |
+| Stammdaten    | `src/config/site.ts`                  | Name, Kontakt, Termin-Link, Domain – an **einer** Stelle |
+| Inhalte       | `src/config/*.ts`, `src/content/*.ts` | Leistungen, FAQ, Rechtstexte                             |
+| Wartungsmodus | `src/middleware.ts`                   | fängt alle Anfragen ab → Status 503                      |
+| Tests         | `src/__tests__`                       | prüfen Konfiguration, Termin-Links, strukturierte Daten  |
+| Hosting       | Vercel                                | Build, SSL, Auslieferung, Vorschau-URLs, Rollback        |
 
 ## Bewusste Entscheidungen
 

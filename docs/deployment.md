@@ -4,16 +4,16 @@
 
 **Vercel**, automatisch. Es gibt keinen manuellen Deploy-Befehl.
 
-| Ereignis | Ergebnis |
-|---|---|
+| Ereignis              | Ergebnis                                                        |
+| --------------------- | --------------------------------------------------------------- |
 | Push auf einen Branch | Vorschau-Deployment mit eigener URL (nicht öffentlich verlinkt) |
-| Merge/Push auf `main` | Production-Deployment → https://dennis-landwehr.com |
+| Merge/Push auf `main` | Production-Deployment → https://dennis-landwehr.com             |
 
 ## Welcher Stand ist gerade live?
 
-- **Vercel** → Projekt → *Deployments*: Der oberste Eintrag mit dem Label **Production / Current**
+- **Vercel** → Projekt → _Deployments_: Der oberste Eintrag mit dem Label **Production / Current**
   zeigt Commit-Hash, Commit-Nachricht, Branch und Zeitpunkt.
-- **GitHub** → Repository → rechts *Deployments* bzw. *Environments* → „Production“.
+- **GitHub** → Repository → rechts _Deployments_ bzw. _Environments_ → „Production“.
 - Welche Version vorher live war: in derselben Vercel-Liste der nächste Production-Eintrag darunter.
 
 ## Neue Version veröffentlichen
@@ -26,15 +26,15 @@ curl -I https://dennis-landwehr.com
 
 ## Rollback (etwas ist kaputt gegangen)
 
-**Schnell (Sekunden):** Vercel → *Deployments* → letztes funktionierendes Production-Deployment →
+**Schnell (Sekunden):** Vercel → _Deployments_ → letztes funktionierendes Production-Deployment →
 Menü „…“ → **Instant Rollback**.
 
 > Achtung: Nach einem Instant Rollback veröffentlicht Vercel neue Merges auf `main` **nicht mehr
-> automatisch**, bis du den Rollback wieder aufhebst (*Undo Rollback* oder ein Deployment manuell
+> automatisch**, bis du den Rollback wieder aufhebst (_Undo Rollback_ oder ein Deployment manuell
 > „Promote to Production“). Das ist Absicht – damit nicht der kaputte Stand gleich wieder live geht.
 
 **Sauber (dauerhaft):** den fehlerhaften Commit rückgängig machen – in GitHub Desktop Rechtsklick auf
-den Commit → *Revert Changes in Commit* → als Pull Request mergen. So bleibt die Historie nachvollziehbar.
+den Commit → _Revert Changes in Commit_ → als Pull Request mergen. So bleibt die Historie nachvollziehbar.
 
 ## Wartungsmodus
 
@@ -49,14 +49,14 @@ Längerer Wartungsmodus (Wochen) schadet dem Google-Ranking; 503 ist nur für ku
 
 - Domain `dennis-landwehr.com` ist bei **Strato** registriert (Konto CL Concepts) und zeigt per DNS auf Vercel; SSL stellt Vercel automatisch aus.
 - Bei Strato nur die Web-Einträge (A/CNAME) ändern – MX/SPF/DKIM/DMARC nie anfassen.
-- Verwaltung: Vercel → Projekt → *Settings → Domains*.
+- Verwaltung: Vercel → Projekt → _Settings → Domains_.
 
 ## Logs
 
-Vercel → Projekt → *Deployments* → Deployment anklicken → *Build Logs* (Bauvorgang) bzw.
-*Logs* (Laufzeit).
+Vercel → Projekt → _Deployments_ → Deployment anklicken → _Build Logs_ (Bauvorgang) bzw.
+_Logs_ (Laufzeit).
 
 ## Node-Version
 
-Lokal: `.nvmrc` (22). In Vercel unter *Settings → Build & Development → Node.js Version* ebenfalls
+Lokal: `.nvmrc` (22). In Vercel unter _Settings → Build & Development → Node.js Version_ ebenfalls
 **22.x** einstellen, damit lokal und live gleich gebaut wird.

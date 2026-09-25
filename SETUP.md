@@ -3,6 +3,7 @@
 ## Vor der Veröffentlichung
 
 ### Pflicht – Konfiguration
+
 - [ ] Termin-URL eingesetzt (`siteConfig.bookingUrl` in `src/config/site.ts`)
 - [ ] Geschäftliche E-Mail bestätigt (`siteConfig.email`)
 - [ ] Telefonnummer bestätigt (`siteConfig.phone`)
@@ -11,12 +12,14 @@
 - [ ] Domain und Canonical URL eingesetzt (`siteConfig.siteUrl`)
 
 ### Pflicht – Bilder
+
 - [ ] Portrait von Dennis Landwehr bereitgestellt (freigegebenes Foto, kein KI-Bild)
 - [ ] Hero-Bild bereitgestellt (`public/images/hero-mediziner.jpg`)
 - [ ] Open-Graph-Bild bereitgestellt (`public/images/og-image.jpg`, 1200×630 px)
 - [ ] Alle weiteren Bilder aus `IMAGE_PROMPTS.md` bereitgestellt
 
 ### Pflicht – Rechtliches
+
 - [ ] Impressum juristisch geprüft und finalisiert
 - [ ] Datenschutzerklärung juristisch geprüft und finalisiert
 - [ ] Rechtliche Hinweise durch MLP-Compliance freigegeben
@@ -25,6 +28,7 @@
 - [ ] Keine nicht freigegebenen Siegel, Auszeichnungen oder Testimonials
 
 ### Empfohlen – SEO und Technik
+
 - [ ] Strukturierte Daten validiert (Google Rich Results Test)
 - [ ] Mobile Darstellung geprüft (360, 390, 768, 1024, 1440 px)
 - [ ] Lighthouse-Scores geprüft (Ziel: Performance ≥90, A11y ≥95, SEO ≥95)
@@ -35,6 +39,7 @@
 - [ ] 404-Seite funktioniert korrekt
 
 ### Optional
+
 - [ ] Analytics-Konfiguration geprüft (standardmäßig deaktiviert)
 - [ ] Google Business Profil verknüpft (wenn vorhanden)
 - [ ] Tracking-Konfiguration geprüft (nur nach Einwilligung)
@@ -92,6 +97,7 @@ Alle CTAs werden automatisch aktualisiert.
 ## Analytics aktivieren (optional)
 
 Analytics ist standardmäßig deaktiviert. Bevor Analytics eingebunden wird:
+
 1. Datenschutzerklärung entsprechend ergänzen
 2. Einwilligungsmanagement implementieren
 3. Erst nach wirksamer Einwilligung laden
@@ -108,6 +114,7 @@ Alternativ: Repository mit Vercel verbinden → automatisches Deployment bei Git
 ## Rechtliche Inhalte ersetzen
 
 Platzhaltertexte in folgenden Dateien:
+
 - `src/app/impressum/page.tsx`
 - `src/app/datenschutz/page.tsx`
 - `src/app/rechtliche-hinweise/page.tsx`
@@ -119,13 +126,13 @@ Alle Platzhalter sind mit `[Platzhalter]` oder dem ⚠️-Symbol markiert.
 
 ## Offene Punkte (Platzhalter)
 
-| Bereich | Datei | Was fehlt |
-|---------|-------|-----------|
-| Impressum | `src/app/impressum/page.tsx` | Vollständiger Rechtstext, Aufsichtsbehörde |
-| Datenschutz | `src/app/datenschutz/page.tsx` | Vollständiger Rechtstext, Hosting-Anbieter |
-| Rechtl. Hinweise | `src/app/rechtliche-hinweise/page.tsx` | MLP-Compliance-Freigabe |
-| Portrait | `public/images/dennis-landwehr-portrait.jpg` | Foto bereitstellen |
-| Hero-Bild | `public/images/hero-mediziner.jpg` | Bild bereitstellen |
-| OG-Bild | `public/images/og-image.jpg` | Bild bereitstellen (1200×630) |
-| JAEG-Grenzwert | `src/config/sources.ts` | Aktuellen Wert mit Quelle eintragen |
-| Domain | `src/config/site.ts` → `siteUrl` | Produktionsdomain eintragen |
+| Bereich          | Datei                                        | Was fehlt                                  |
+| ---------------- | -------------------------------------------- | ------------------------------------------ |
+| Impressum        | `src/app/impressum/page.tsx`                 | Vollständiger Rechtstext, Aufsichtsbehörde |
+| Datenschutz      | `src/app/datenschutz/page.tsx`               | Vollständiger Rechtstext, Hosting-Anbieter |
+| Rechtl. Hinweise | `src/app/rechtliche-hinweise/page.tsx`       | MLP-Compliance-Freigabe                    |
+| Portrait         | `public/images/dennis-landwehr-portrait.jpg` | Foto bereitstellen                         |
+| Hero-Bild        | `public/images/hero-mediziner.jpg`           | Bild bereitstellen                         |
+| OG-Bild          | `public/images/og-image.jpg`                 | Bild bereitstellen (1200×630)              |
+| JAEG-Grenzwert   | `src/config/sources.ts`                      | Aktuellen Wert mit Quelle eintragen        |
+| Domain           | `src/config/site.ts` → `siteUrl`             | Produktionsdomain eintragen                |

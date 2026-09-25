@@ -31,7 +31,10 @@ function Slider({ label, value, min, max, step, format, onChange }: SliderProps)
         <label htmlFor={id} className="text-sm font-medium text-foreground">
           {label}
         </label>
-        <output htmlFor={id} className="text-base font-bold text-primary tabular-nums whitespace-nowrap">
+        <output
+          htmlFor={id}
+          className="text-base font-bold text-primary tabular-nums whitespace-nowrap"
+        >
           {format(value)}
         </output>
       </div>
@@ -84,11 +87,20 @@ function WealthCalculator() {
     const y = (v: number) => pad.top + innerH - (v / maxY) * innerH;
 
     const line = (key: "invested" | "total") =>
-      series.map((p, i) => `${i === 0 ? "M" : "L"}${x(p.year).toFixed(1)},${y(p[key]).toFixed(1)}`).join(" ");
+      series
+        .map((p, i) => `${i === 0 ? "M" : "L"}${x(p.year).toFixed(1)},${y(p[key]).toFixed(1)}`)
+        .join(" ");
     const area = (key: "invested" | "total") =>
       `${line(key)} L${x(years).toFixed(1)},${(pad.top + innerH).toFixed(1)} L${x(0).toFixed(1)},${(pad.top + innerH).toFixed(1)} Z`;
 
-    return { w, h, totalArea: area("total"), investedArea: area("invested"), totalLine: line("total"), baseline: pad.top + innerH };
+    return {
+      w,
+      h,
+      totalArea: area("total"),
+      investedArea: area("invested"),
+      totalLine: line("total"),
+      baseline: pad.top + innerH,
+    };
   }, [series, years]);
 
   return (
@@ -132,8 +144,12 @@ function WealthCalculator() {
             <p className="text-lg font-bold text-teal tabular-nums">+{euro.format(gain)}</p>
           </div>
           <div className="col-span-2 bg-secondary border border-primary/20 rounded-xl p-4">
-            <p className="text-xs text-muted font-medium mb-1">Mögliches Endkapital nach {years} Jahren</p>
-            <p className="text-2xl md:text-3xl font-bold text-primary tabular-nums">{euro.format(total)}</p>
+            <p className="text-xs text-muted font-medium mb-1">
+              Mögliches Endkapital nach {years} Jahren
+            </p>
+            <p className="text-2xl md:text-3xl font-bold text-primary tabular-nums">
+              {euro.format(total)}
+            </p>
           </div>
         </div>
       </div>
@@ -148,7 +164,13 @@ function WealthCalculator() {
         >
           <path d={chart.totalArea} fill="var(--color-secondary)" />
           <path d={chart.investedArea} fill="var(--color-border)" opacity={0.85} />
-          <path d={chart.totalLine} fill="none" stroke="var(--color-primary)" strokeWidth={2.5} strokeLinejoin="round" />
+          <path
+            d={chart.totalLine}
+            fill="none"
+            stroke="var(--color-primary)"
+            strokeWidth={2.5}
+            strokeLinejoin="round"
+          />
           <line
             x1={0}
             y1={chart.baseline}
@@ -160,7 +182,13 @@ function WealthCalculator() {
           <text x={8} y={chart.h - 6} fontSize={12} fill="var(--color-muted)">
             heute
           </text>
-          <text x={chart.w - 8} y={chart.h - 6} fontSize={12} fill="var(--color-muted)" textAnchor="end">
+          <text
+            x={chart.w - 8}
+            y={chart.h - 6}
+            fontSize={12}
+            fill="var(--color-muted)"
+            textAnchor="end"
+          >
             in {years} Jahren
           </text>
         </svg>
@@ -170,7 +198,10 @@ function WealthCalculator() {
             Eigene Einzahlungen
           </span>
           <span className="flex items-center gap-2">
-            <span className="w-3 h-3 rounded-sm bg-secondary border border-primary inline-block" aria-hidden="true" />
+            <span
+              className="w-3 h-3 rounded-sm bg-secondary border border-primary inline-block"
+              aria-hidden="true"
+            />
             Mögliche Wertentwicklung
           </span>
         </div>
@@ -246,7 +277,9 @@ function BuGapCalculator() {
       <div className="lg:col-span-3 space-y-5">
         <div>
           <div className="flex items-baseline justify-between mb-1.5">
-            <p className="text-sm font-medium text-foreground">Absicherungsbedarf (ca. 75 % vom Netto)</p>
+            <p className="text-sm font-medium text-foreground">
+              Absicherungsbedarf (ca. 75 % vom Netto)
+            </p>
             <p className="text-sm font-bold text-navy tabular-nums">{euro.format(need)} / Monat</p>
           </div>
           <div className="h-4 bg-surface border border-border rounded-full overflow-hidden">
@@ -256,8 +289,12 @@ function BuGapCalculator() {
 
         <div>
           <div className="flex items-baseline justify-between mb-1.5">
-            <p className="text-sm font-medium text-foreground">Gesetzliche Absicherung (Modellannahme)</p>
-            <p className="text-sm font-bold text-teal tabular-nums">{euro.format(covered)} / Monat</p>
+            <p className="text-sm font-medium text-foreground">
+              Gesetzliche Absicherung (Modellannahme)
+            </p>
+            <p className="text-sm font-bold text-teal tabular-nums">
+              {euro.format(covered)} / Monat
+            </p>
           </div>
           <div className="h-4 bg-surface border border-border rounded-full overflow-hidden">
             <div
@@ -268,8 +305,13 @@ function BuGapCalculator() {
         </div>
 
         <div className="bg-warm-light border border-warm-border rounded-xl p-5">
-          <p className="text-sm font-medium text-warm-dark mb-1">Mögliche monatliche Versorgungslücke</p>
-          <p className="text-3xl md:text-4xl font-bold text-warm-dark tabular-nums" aria-live="polite">
+          <p className="text-sm font-medium text-warm-dark mb-1">
+            Mögliche monatliche Versorgungslücke
+          </p>
+          <p
+            className="text-3xl md:text-4xl font-bold text-warm-dark tabular-nums"
+            aria-live="polite"
+          >
             {euro.format(gap)}
           </p>
           <p className="text-sm text-muted mt-2 leading-relaxed">
@@ -305,12 +347,18 @@ export default function FinanceCalculators({
   variant = "all",
   headingId = "rechner-heading",
 }: FinanceCalculatorsProps) {
-  const [activeTab, setActiveTab] = useState<"bu" | "vermoegen">(variant === "vermoegen" ? "vermoegen" : "bu");
+  const [activeTab, setActiveTab] = useState<"bu" | "vermoegen">(
+    variant === "vermoegen" ? "vermoegen" : "bu"
+  );
   const showTabs = variant === "all";
   const active = showTabs ? activeTab : variant;
 
   return (
-    <section id="rechner" className="py-16 md:py-24 gradient-warm scroll-mt-20" aria-labelledby={headingId}>
+    <section
+      id="rechner"
+      className="py-16 md:py-24 gradient-warm scroll-mt-20"
+      aria-labelledby={headingId}
+    >
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           id={headingId}
@@ -336,7 +384,9 @@ export default function FinanceCalculators({
                 aria-controls={`panel-${tab.id}`}
                 onClick={() => setActiveTab(tab.id)}
                 className={`flex-1 px-4 py-2.5 rounded-lg text-sm font-semibold transition-colors min-h-[44px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus ${
-                  activeTab === tab.id ? "bg-primary text-white" : "text-foreground hover:bg-surface"
+                  activeTab === tab.id
+                    ? "bg-primary text-white"
+                    : "text-foreground hover:bg-surface"
                 }`}
               >
                 {tab.label}

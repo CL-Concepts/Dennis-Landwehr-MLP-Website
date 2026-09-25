@@ -37,9 +37,7 @@ export default function KontaktPage() {
                   Direkte Terminbuchung über das MLP-Beratungssystem – digital oder persönlich in{" "}
                   {siteConfig.city}.
                 </p>
-                <BookingLink source="hero">
-                  Jetzt Termin vereinbaren
-                </BookingLink>
+                <BookingLink source="hero">Jetzt Termin vereinbaren</BookingLink>
               </div>
 
               {/* Telefon */}

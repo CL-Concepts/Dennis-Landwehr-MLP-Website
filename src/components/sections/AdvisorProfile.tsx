@@ -19,7 +19,10 @@ export default function AdvisorProfile() {
                 className="object-cover object-center"
                 sizes="(max-width: 640px) 100vw, 384px"
               />
-              <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-navy/20 to-transparent" aria-hidden="true" />
+              <div
+                className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-navy/20 to-transparent"
+                aria-hidden="true"
+              />
             </div>
           </div>
 
@@ -47,9 +50,7 @@ export default function AdvisorProfile() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <BookingLink source="ueber-mich">
-                Dennis kennenlernen
-              </BookingLink>
+              <BookingLink source="ueber-mich">Dennis kennenlernen</BookingLink>
               <Link
                 href="/ueber-mich"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-primary bg-white border border-primary rounded-lg hover:bg-secondary transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus min-h-[44px]"
