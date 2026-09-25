@@ -1,5 +1,6 @@
 import BookingLink from "@/components/ui/BookingLink";
 import { siteConfig } from "@/config/site";
+import { fill, settings } from "@/lib/content";
 
 export default function FinalCta() {
   return (
@@ -13,15 +14,12 @@ export default function FinalCta() {
             id="final-cta-heading"
             className="text-3xl md:text-4xl font-bold text-navy mb-4 text-balance"
           >
-            Lass uns deine nächsten finanziellen Schritte strukturieren.
+            {settings.finalCta.title}
           </h2>
-          <p className="text-muted text-lg leading-relaxed mb-8">
-            In einem ersten Gespräch klären wir, welche Themen für deine aktuelle Karrierephase
-            relevant sind und wo konkreter Handlungsbedarf besteht.
-          </p>
+          <p className="text-muted text-lg leading-relaxed mb-8">{settings.finalCta.text}</p>
 
           <BookingLink source="final-cta" size="lg" className="mb-6">
-            Jetzt Termin vereinbaren
+            {settings.finalCta.button}
           </BookingLink>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -68,9 +66,7 @@ export default function FinalCta() {
               {siteConfig.email}
             </a>
           </div>
-          <p className="mt-4 text-xs text-muted">
-            Beratung möglich: digital per Videokonferenz oder persönlich in {siteConfig.city}
-          </p>
+          <p className="mt-4 text-xs text-muted">{fill(settings.finalCta.note)}</p>
         </div>
       </div>
     </section>

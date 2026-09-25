@@ -3,25 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "build:local": "next build",
+    "dev": "tinacms dev --port 4002 --datalayer-port 9002 -c \"next dev\"",
+    "build": "tinacms build && next build",
+    "build:local": "tinacms dev --port 4002 --datalayer-port 9002 -c \"NODE_ENV=production next build\"",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "tina:build": "tinacms build"
   },
   "dependencies": {
     "next": "^16.2.9",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tinacms": "^3.14.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.2",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
+    "@tinacms/cli": "^3.1.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^20",
     "@types/react": "^19",

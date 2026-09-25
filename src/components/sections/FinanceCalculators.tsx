@@ -3,6 +3,9 @@
 import { useId, useMemo, useState } from "react";
 import BookingLink from "@/components/ui/BookingLink";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { fill, rechnerTexte } from "@/lib/content";
+
+const T = rechnerTexte;
 
 const euro = new Intl.NumberFormat("de-DE", {
   style: "currency",
@@ -108,7 +111,7 @@ function WealthCalculator() {
       {/* Eingaben */}
       <div className="lg:col-span-2 space-y-6">
         <Slider
-          label="Monatliche Sparrate"
+          label={T.wealth.monthlyLabel}
           value={monthly}
           min={25}
           max={1500}
@@ -117,7 +120,7 @@ function WealthCalculator() {
           onChange={setMonthly}
         />
         <Slider
-          label="Anlagedauer"
+          label={T.wealth.yearsLabel}
           value={years}
           min={5}
           max={40}
@@ -126,7 +129,7 @@ function WealthCalculator() {
           onChange={setYears}
         />
         <Slider
-          label="Angenommene Rendite p. a."
+          label={T.wealth.rateLabel}
           value={rate}
           min={0}
           max={9}
@@ -136,16 +139,16 @@ function WealthCalculator() {
         />
         <div className="grid grid-cols-2 gap-3 pt-2">
           <div className="bg-surface border border-border rounded-xl p-4">
-            <p className="text-xs text-muted font-medium mb-1">Eingezahlt</p>
+            <p className="text-xs text-muted font-medium mb-1">{T.wealth.investedLabel}</p>
             <p className="text-lg font-bold text-navy tabular-nums">{euro.format(invested)}</p>
           </div>
           <div className="bg-teal-light border border-teal/20 rounded-xl p-4">
-            <p className="text-xs text-muted font-medium mb-1">Wertzuwachs</p>
+            <p className="text-xs text-muted font-medium mb-1">{T.wealth.gainLabel}</p>
             <p className="text-lg font-bold text-teal tabular-nums">+{euro.format(gain)}</p>
           </div>
           <div className="col-span-2 bg-secondary border border-primary/20 rounded-xl p-4">
             <p className="text-xs text-muted font-medium mb-1">
-              Mögliches Endkapital nach {years} Jahren
+              {fill(T.wealth.totalLabel, { jahre: years })}
             </p>
             <p className="text-2xl md:text-3xl font-bold text-primary tabular-nums">
               {euro.format(total)}
@@ -180,7 +183,7 @@ function WealthCalculator() {
             strokeWidth={1}
           />
           <text x={8} y={chart.h - 6} fontSize={12} fill="var(--color-muted)">
-            heute
+            {T.wealth.chartStart}
           </text>
           <text
             x={chart.w - 8}
@@ -189,20 +192,20 @@ function WealthCalculator() {
             fill="var(--color-muted)"
             textAnchor="end"
           >
-            in {years} Jahren
+            {fill(T.wealth.chartEnd, { jahre: years })}
           </text>
         </svg>
         <div className="flex flex-wrap gap-x-6 gap-y-1 mt-3 text-xs text-muted">
           <span className="flex items-center gap-2">
             <span className="w-3 h-3 rounded-sm bg-border inline-block" aria-hidden="true" />
-            Eigene Einzahlungen
+            {T.wealth.legendInvested}
           </span>
           <span className="flex items-center gap-2">
             <span
               className="w-3 h-3 rounded-sm bg-secondary border border-primary inline-block"
               aria-hidden="true"
             />
-            Mögliche Wertentwicklung
+            {T.wealth.legendGrowth}
           </span>
         </div>
       </div>
@@ -215,9 +218,9 @@ function WealthCalculator() {
 type WorkStatus = "studium" | "angestellt" | "selbststaendig";
 
 const statusOptions: { id: WorkStatus; label: string }[] = [
-  { id: "studium", label: "Im Studium" },
-  { id: "angestellt", label: "Angestellt" },
-  { id: "selbststaendig", label: "Selbstständig / Praxis" },
+  { id: "studium", label: T.bu.statusStudium },
+  { id: "angestellt", label: T.bu.statusAngestellt },
+  { id: "selbststaendig", label: T.bu.statusSelbststaendig },
 ];
 
 // Vereinfachte Modellannahmen – bewusst konservativ und als solche gekennzeichnet
@@ -242,7 +245,7 @@ function BuGapCalculator() {
       {/* Eingaben */}
       <div className="lg:col-span-2 space-y-6">
         <Slider
-          label="Monatliches Nettoeinkommen (Ziel bei Studierenden: künftiges Einkommen)"
+          label={T.bu.incomeLabel}
           value={income}
           min={1000}
           max={12000}
@@ -251,8 +254,8 @@ function BuGapCalculator() {
           onChange={setIncome}
         />
         <fieldset>
-          <legend className="text-sm font-medium text-foreground mb-2">Berufliche Situation</legend>
-          <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Berufliche Situation">
+          <legend className="text-sm font-medium text-foreground mb-2">{T.bu.statusLegend}</legend>
+          <div className="flex flex-wrap gap-2" role="radiogroup" aria-label={T.bu.statusLegend}>
             {statusOptions.map((option) => (
               <button
                 key={option.id}
@@ -277,9 +280,7 @@ function BuGapCalculator() {
       <div className="lg:col-span-3 space-y-5">
         <div>
           <div className="flex items-baseline justify-between mb-1.5">
-            <p className="text-sm font-medium text-foreground">
-              Absicherungsbedarf (ca. 75 % vom Netto)
-            </p>
+            <p className="text-sm font-medium text-foreground">{T.bu.needLabel}</p>
             <p className="text-sm font-bold text-navy tabular-nums">{euro.format(need)} / Monat</p>
           </div>
           <div className="h-4 bg-surface border border-border rounded-full overflow-hidden">
@@ -289,9 +290,7 @@ function BuGapCalculator() {
 
         <div>
           <div className="flex items-baseline justify-between mb-1.5">
-            <p className="text-sm font-medium text-foreground">
-              Gesetzliche Absicherung (Modellannahme)
-            </p>
+            <p className="text-sm font-medium text-foreground">{T.bu.coverLabel}</p>
             <p className="text-sm font-bold text-teal tabular-nums">
               {euro.format(covered)} / Monat
             </p>
@@ -305,9 +304,7 @@ function BuGapCalculator() {
         </div>
 
         <div className="bg-warm-light border border-warm-border rounded-xl p-5">
-          <p className="text-sm font-medium text-warm-dark mb-1">
-            Mögliche monatliche Versorgungslücke
-          </p>
+          <p className="text-sm font-medium text-warm-dark mb-1">{T.bu.gapLabel}</p>
           <p
             className="text-3xl md:text-4xl font-bold text-warm-dark tabular-nums"
             aria-live="polite"
@@ -316,15 +313,15 @@ function BuGapCalculator() {
           </p>
           <p className="text-sm text-muted mt-2 leading-relaxed">
             {status === "studium"
-              ? "Als Studierende:r besteht in der Regel noch kein Anspruch auf gesetzliche Erwerbsminderungsrente – gleichzeitig ist der Einstieg in die Absicherung jetzt am günstigsten."
+              ? T.bu.textStudium
               : status === "selbststaendig"
-                ? "Ohne eigene Vorsorge besteht bei Selbstständigkeit meist kein gesetzlicher Schutz. Das Versorgungswerk leistet oft erst bei vollständiger Berufsaufgabe."
-                : "Die gesetzliche Erwerbsminderungsrente deckt nur einen Teil – und greift erst, wenn kaum noch irgendeine Tätigkeit möglich ist, nicht speziell der Arztberuf."}
+                ? T.bu.textSelbststaendig
+                : T.bu.textAngestellt}
           </p>
         </div>
 
         <BookingLink source="bu-rechner" fullWidth>
-          Lücke im Erstgespräch prüfen lassen
+          {T.bu.button}
         </BookingLink>
       </div>
     </div>
@@ -334,8 +331,8 @@ function BuGapCalculator() {
 /* ---------- Section mit Tab-Umschaltung ---------- */
 
 const tabs = [
-  { id: "bu", label: "BU-Lücken-Check" },
-  { id: "vermoegen", label: "Vermögensrechner" },
+  { id: "bu", label: T.tabBu },
+  { id: "vermoegen", label: T.tabWealth },
 ] as const;
 
 type FinanceCalculatorsProps = {
@@ -363,9 +360,9 @@ export default function FinanceCalculators({
         <SectionHeading
           id={headingId}
           as="h2"
-          eyebrow="Interaktive Rechner"
-          title="Verschaff dir in 30 Sekunden einen ersten Überblick"
-          subtitle="Bewege die Regler und sieh sofort, was deine Zahlen bedeuten – als Ausgangspunkt für ein fundiertes Gespräch."
+          eyebrow={T.eyebrow}
+          title={T.title}
+          subtitle={T.subtitle}
           className="mb-10"
         />
 
@@ -405,9 +402,7 @@ export default function FinanceCalculators({
         </div>
 
         <p className="text-xs text-muted leading-relaxed max-w-3xl mx-auto text-center mt-6">
-          Vereinfachte Modellrechnung mit pauschalen Annahmen, ohne Steuern, Inflation, Kosten und
-          individuelle Ansprüche. Die Ergebnisse sind keine Prognose und ersetzen keine individuelle
-          Beratung – die tatsächliche Situation klären wir gemeinsam im Gespräch.
+          {T.disclaimer}
         </p>
       </div>
     </section>

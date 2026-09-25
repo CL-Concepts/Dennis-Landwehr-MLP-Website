@@ -6,6 +6,7 @@ import LegalNotice from "@/components/ui/LegalNotice";
 import FinalCta from "./FinalCta";
 import FAQ from "./FAQ";
 import type { FaqItem } from "@/content/faqs";
+import { settings } from "@/lib/content";
 
 type AtAGlanceItem = {
   label: string;
@@ -38,12 +39,13 @@ export default function ServicePageLayout({
   updatedAt,
   interactiveSection,
 }: ServicePageLayoutProps) {
+  const t = settings.servicePage;
   return (
     <>
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs
           items={[
-            { name: "Leistungen", href: "/leistungen" },
+            { name: t.breadcrumbParent, href: "/leistungen" },
             { name: breadcrumb, href: `/leistungen/${slug}` },
           ]}
         />
@@ -71,12 +73,12 @@ export default function ServicePageLayout({
             {/* Autor + Datum */}
             <div className="mt-6 pt-4 border-t border-border flex flex-wrap gap-4 text-xs text-muted">
               <span>
-                Autor: <strong className="text-foreground">Dennis Landwehr</strong>, Finanzberater
-                bei MLP
+                {t.authorPrefix} <strong className="text-foreground">{t.authorName}</strong>
+                {t.authorSuffix}
               </span>
               {updatedAt && (
                 <span>
-                  Zuletzt aktualisiert:{" "}
+                  {t.updatedPrefix}{" "}
                   <time dateTime={updatedAt}>
                     {new Date(updatedAt).toLocaleDateString("de-DE", {
                       year: "numeric",
@@ -90,7 +92,7 @@ export default function ServicePageLayout({
             {/* Verwandte Seiten */}
             {relatedLinks && relatedLinks.length > 0 && (
               <div className="mt-8 pt-6 border-t border-border">
-                <p className="text-sm font-semibold text-navy mb-3">Verwandte Themen</p>
+                <p className="text-sm font-semibold text-navy mb-3">{t.relatedTitle}</p>
                 <ul className="flex flex-wrap gap-2">
                   {relatedLinks.map((link) => (
                     <li key={link.href}>
@@ -111,7 +113,7 @@ export default function ServicePageLayout({
           <aside className="space-y-6">
             {/* Auf einen Blick */}
             <div className="bg-surface border border-border rounded-card p-5 sticky top-24">
-              <h2 className="text-base font-bold text-navy mb-4">Auf einen Blick</h2>
+              <h2 className="text-base font-bold text-navy mb-4">{t.atAGlanceTitle}</h2>
               <dl className="space-y-3">
                 {atAGlance.map((item) => (
                   <div key={item.label}>
@@ -124,13 +126,13 @@ export default function ServicePageLayout({
               </dl>
               <div className="mt-6 space-y-2">
                 <BookingLink source="service-page" fullWidth>
-                  Persönliche Situation besprechen
+                  {t.bookingButton}
                 </BookingLink>
                 <Link
                   href="/kontakt"
                   className="flex items-center justify-center text-sm text-primary hover:text-primary-hover py-2 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus rounded"
                 >
-                  Oder schreib mir
+                  {t.contactLink}
                 </Link>
               </div>
             </div>
@@ -141,7 +143,7 @@ export default function ServicePageLayout({
       {interactiveSection}
 
       {/* FAQ */}
-      {faqs && faqs.length > 0 && <FAQ faqs={faqs} title="Häufige Fragen" />}
+      {faqs && faqs.length > 0 && <FAQ faqs={faqs} title={t.faqTitle} />}
 
       <FinalCta />
     </>

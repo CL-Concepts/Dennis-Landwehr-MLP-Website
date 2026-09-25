@@ -1,0 +1,192 @@
+{
+  "seoTitle": "Finanzberatung für Medizinstudierende in {{stadt}}",
+  "seoDescription": "Finanzielle Grundlagen für das Medizinstudium: Berufshaftpflicht bei Famulatur, Berufsunfähigkeit, Krankenversicherung und erste Rücklagen – verständlich erklärt.",
+  "breadcrumb": "Für Studierende",
+  "hero": {
+    "eyebrow": "Für Medizinstudierende",
+    "title": "Finanzielle Grundlagen für dein Medizinstudium",
+    "text": "Zwischen Studium, Famulatur, Auslandsaufenthalt und Praktischem Jahr bleiben Finanz- und Versicherungsthemen oft liegen. Dabei lassen sich gerade in dieser Phase wichtige Grundlagen frühzeitig und mit überschaubarem Aufwand ordnen.",
+    "primaryButton": "Termin für Studierende vereinbaren",
+    "secondaryButton": "Frage stellen",
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Medizinstudierende lernen gemeinsam"
+  },
+  "notice": {
+    "label": "Wichtig:",
+    "text": "Im Studium muss nicht sofort alles geregelt werden. Zuerst geht es darum, Risiken und Ziele zu verstehen – und dann nur die wirklich relevanten Schritte umzusetzen. Das erspart unnötige Ausgaben und schafft Raum für tatsächlich wichtige Entscheidungen."
+  },
+  "topics": {
+    "title": "Finanzthemen im Studium – worauf es ankommt",
+    "subtitle": "Nicht alle Themen sind gleichzeitig wichtig. Hier findest du einen Überblick, was in welcher Phase des Studiums relevant sein kann.",
+    "linkText": "Mehr erfahren",
+    "items": [
+      {
+        "title": "Berufshaftpflicht bei ersten Patientenkontakten",
+        "description": "Was gilt bei Pflichtfamulaturen, freiwilligen Famulaturen und Auslandsaufenthalten? Wann ist ein eigener Schutz sinnvoll?",
+        "href": "/leistungen/berufshaftpflicht-mediziner"
+      },
+      {
+        "title": "Krankenversicherung und spätere Wechseloptionen",
+        "description": "Familienversicherung, studentische GKV, Optionstarife – und wie sich Entscheidungen im Studium auf spätere Optionen auswirken.",
+        "href": "/leistungen/krankenversicherung-mediziner"
+      },
+      {
+        "title": "Frühe Berufsunfähigkeitsabsicherung",
+        "description": "Warum ein früher Abschluss oft günstiger ist, welche Nachversicherungsoptionen es gibt und was die Gesundheitsprüfung bedeutet.",
+        "href": "/leistungen/berufsunfaehigkeit-mediziner"
+      },
+      {
+        "title": "Konto, Budget und Rücklagen",
+        "description": "Strukturierter Umgang mit BAföG, Nebenjob-Einkommen und Förderungen – Grundlage für spätere finanzielle Entscheidungen.",
+        "href": "/leistungen/liquiditaetsmanagement-mediziner"
+      },
+      {
+        "title": "Flexibler Einstieg in den Vermögensaufbau",
+        "description": "Wann lohnt es sich, erste Rücklagen für den Vermögensaufbau beiseitezulegen – und wie das mit kleinem Budget funktionieren kann.",
+        "href": "/leistungen/vermoegensaufbau-mediziner"
+      },
+      {
+        "title": "Vorbereitung auf den Berufseinstieg",
+        "description": "Was ändert sich finanziell nach dem Studium? Krankenversicherung, erstes Gehalt, Versorgungswerk – frühzeitig den Überblick bekommen.",
+        "href": "/leistungen"
+      }
+    ]
+  },
+  "program": {
+    "title": "MLP Studierendenförderprogramm 2026",
+    "text": "Als MLP-Berater habe ich Zugang zu einem umfangreichen Förderprogramm exklusiv für Medizinstudierende – kostenfreie Seminare, Klinikdatenbanken, Wundnahtkurse und ein dotiertes Stipendienprogramm.",
+    "items": [
+      {
+        "tag": "Seminar",
+        "title": "Ab ins Ausland – mit Famulatur und PJ",
+        "text": "Wie finde ich die passende Klinik im In- und Ausland? Wie bewerbe ich mich und wie finanziere ich meinen Auslandsaufenthalt?",
+        "highlight": false
+      },
+      {
+        "tag": "Exklusiv",
+        "title": "Klinikdatenbank The Electives Network (TEN)",
+        "text": "Kostenfreier Zugang zu ~3.000 Kliniken in über 150 Ländern mit Ansprechpartnern, Fachgebieten und aktuellen Kontaktdaten.",
+        "highlight": false
+      },
+      {
+        "tag": "Seminar",
+        "title": "Financial MEDucation",
+        "text": "Smarter Umgang mit Geld, Grundzüge des Kapitalmarktes, Anlagemöglichkeiten und ein Überblick über Finanzplanung für Ärzt:innen.",
+        "highlight": false
+      },
+      {
+        "tag": "Seminar",
+        "title": "Steuern im Medizinstudium",
+        "text": "Wie setze ich mein Studium beim Finanzamt ab? Was ist notwendig und worauf muss ich achten?",
+        "highlight": false
+      },
+      {
+        "tag": "Seminar",
+        "title": "Endlich Ärztin / Arzt – Abenteuer Berufsstart",
+        "text": "Strukturierte Vorbereitung auf die erste Stelle als Assistenzärztin oder Assistenzarzt: Absicherung, Bewerbung, erste Schritte.",
+        "highlight": false
+      },
+      {
+        "tag": "Neu 2026",
+        "title": "Fachrichtungscheck mit Persönlichkeitsanalyse",
+        "text": "Kostenfreie Persönlichkeitsanalyse + gemeinsamer Check, welche Fachrichtungen wirklich zu dir passen – strukturiert statt nach Zufall.",
+        "highlight": false
+      },
+      {
+        "tag": "Auf Nachfrage",
+        "title": "Chirurgischer Wundnahtkurs",
+        "text": "Das Seminar zum Erlernen chirurgischer Wundnahttechniken wird von einem Chirurgen mit langjähriger Erfahrung geleitet.",
+        "highlight": false
+      },
+      {
+        "tag": "Stipendium",
+        "title": "Medical Excellence – 4.000 € dotiert",
+        "text": "12 Stipendienplätze pro Jahr in verschiedenen Kategorien für Studierende der Human- und Zahnmedizin. Bewerbungsstart April 2026.",
+        "highlight": true
+      }
+    ],
+    "accessLabel": "Dein Zugang:",
+    "accessText": "Als dein persönlicher Berater informiere ich dich über aktuelle Termine und Anmeldefristen für alle Programme. Sprich mich einfach in unserem Gespräch darauf an."
+  },
+  "areas": {
+    "title": "Was ist im Studium wirklich relevant?",
+    "text": "Es gibt Themen, um die du im Studium nicht herumkommst – und andere, die je nach Situation interessant sein können. Hier ein Überblick:",
+    "requiredTitle": "Pflichtbereiche",
+    "required": [
+      {
+        "label": "Gesundheit",
+        "text": "Gesundheitszustand einfrieren (Optionstarif) + Auslandskrankenversicherung für Famulatur/PJ"
+      },
+      {
+        "label": "Haftung",
+        "text": "Privat- und Berufshaftpflicht für ärztliche Tätigkeiten im Studium – oft kostenfrei möglich"
+      },
+      {
+        "label": "Kontenmodell",
+        "text": "Weltweit kostenfrei Bargeld abheben, studentische Kreditkarte, smarte Kontostruktur"
+      },
+      {
+        "label": "Berufsunfähigkeit",
+        "text": "Absicherung mit Mediziner-Besonderheiten: Infektionsklausel, keine Verweisung, günstigerer Beitrag im Studium"
+      }
+    ],
+    "optionalTitle": "Zusatzbereiche (je nach Situation)",
+    "optional": [
+      {
+        "label": "Unfallschutz",
+        "text": "Ergänzend zur BU – einmaliger Auszahlungsbetrag, Infektionsklausel, weltweit in Beruf und Freizeit"
+      },
+      {
+        "label": "Geldanlage",
+        "text": "Erste Grundsteine für effizienten Vermögensaufbau – Studienkonzepte ab 10 € Sparrate möglich"
+      },
+      {
+        "label": "Studienfinanzierung",
+        "text": "Unabhängigkeit und finanzielle Flexibilität, kombinierbar mit BAföG, keine Sicherheiten nötig"
+      }
+    ]
+  },
+  "process": {
+    "title": "Wie läuft ein Beratungsgespräch für Studierende ab?",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Situation klären",
+        "text": "Wir besprechen deine aktuelle Situation: Wo stehst du im Studium? Welche Themen beschäftigen dich konkret?"
+      },
+      {
+        "step": "2",
+        "title": "Relevantes identifizieren",
+        "text": "Nicht jedes Thema ist für jede Person und jede Studienphase gleich relevant. Wir sortieren, was wirklich Priorität hat."
+      },
+      {
+        "step": "3",
+        "title": "Nur das Notwendige angehen",
+        "text": "Du entscheidest, welche Schritte du umsetzen möchtest. Es gibt keinen Druck und keine unnötigen Empfehlungen."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufige Fragen von Medizinstudierenden",
+    "items": [
+      {
+        "id": "faq-stud-berufshaftpflicht",
+        "question": "Brauche ich als Medizinstudierender eine eigene Berufshaftpflicht?",
+        "answer": "In der Regel sind Studierende während Pflichtveranstaltungen und Pflichtfamulaturen über die Universität oder das Lehrkrankenhaus haftpflichtversichert. Für freiwillige Famulaturen, Auslandsaufenthalte oder Praktika außerhalb des regulären Studienrahmens kann eine eigene Absicherung sinnvoll sein. Es lohnt sich, die eigene Situation konkret zu prüfen, bevor man auf einen Versicherungsschutz vertraut, der möglicherweise nicht greift.",
+        "category": "studierende"
+      },
+      {
+        "id": "faq-stud-bu",
+        "question": "Warum sollte ich mich schon im Studium gegen Berufsunfähigkeit absichern?",
+        "answer": "Je früher eine Berufsunfähigkeitsversicherung abgeschlossen wird, desto geringer ist in der Regel der Beitrag – und desto einfacher ist meist die Gesundheitsprüfung. Im Studium besteht oft noch ein sehr guter Gesundheitszustand, während spätere Einträge im Krankenblatt die Absicherung teurer oder schwieriger machen können. Eine frühe Absicherung lässt sich später bei steigendem Einkommen häufig nachversichern, ohne erneute Gesundheitsprüfung.",
+        "category": "studierende"
+      },
+      {
+        "id": "faq-stud-kv",
+        "question": "Welche Krankenversicherung ist im Studium sinnvoll?",
+        "answer": "Die meisten Studierenden sind bis zum 25. Lebensjahr über die Eltern familienversichert (GKV) – das ist in der Regel die günstigste Option. Danach oder bei eigenem Einkommen über einer bestimmten Grenze ist eine eigene Versicherung notwendig. Für Studierende in der gesetzlichen Versicherung gibt es spezielle Studierendentarife. Ein Wechsel in die private Krankenversicherung kann für bestimmte Gruppen interessant sein, sollte aber langfristig betrachtet werden.",
+        "category": "studierende"
+      }
+    ]
+  }
+}

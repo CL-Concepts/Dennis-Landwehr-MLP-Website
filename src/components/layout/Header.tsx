@@ -6,6 +6,7 @@ import { useState, useRef, useEffect } from "react";
 import { mainNav } from "@/config/navigation";
 import { siteConfig } from "@/config/site";
 import BookingLink from "@/components/ui/BookingLink";
+import { settings } from "@/lib/content";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -144,7 +145,7 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <BookingLink source="nav" size="sm">
-              Termin vereinbaren
+              {settings.buttons.header}
             </BookingLink>
           </div>
 
@@ -223,7 +224,7 @@ export default function Header() {
             ))}
             <div className="pt-3 pb-2">
               <BookingLink source="nav" fullWidth>
-                Termin vereinbaren
+                {settings.buttons.header}
               </BookingLink>
             </div>
           </div>

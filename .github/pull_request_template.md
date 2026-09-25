@@ -28,6 +28,8 @@
 
 ## Besondere Vorsicht
 
+- [ ] **Tina-Schema geändert** (`tina/config.ts`, `tina/fields.ts`)?
+      → Inhalte in `content/` weiterhin gültig? Felder nur ergänzen, nicht umbenennen/löschen.
 - [ ] Betrifft Rechtstexte / MLP-Compliance-relevante Aussagen → **Freigabe durch Dennis/MLP nötig**
 - [ ] Betrifft `src/middleware.ts` (Wartungsmodus) → Wirkung auf die Live-Seite bewusst geprüft
 - [ ] Keine Secrets, keine `.env`-Dateien im Commit

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import BookingLink from "@/components/ui/BookingLink";
+import { settings } from "@/lib/content";
 
 export default function StickyMobileCta() {
   const [visible, setVisible] = useState(false);
@@ -22,7 +23,7 @@ export default function StickyMobileCta() {
       aria-hidden={!visible}
     >
       <BookingLink source="sticky-mobile" fullWidth size="md">
-        Termin vereinbaren
+        {settings.buttons.mobile}
       </BookingLink>
     </div>
   );

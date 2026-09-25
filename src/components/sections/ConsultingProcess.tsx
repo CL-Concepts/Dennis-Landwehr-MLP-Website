@@ -1,34 +1,17 @@
 import SectionHeading from "@/components/ui/SectionHeading";
+import type { StartseiteContent } from "@/lib/content";
 
-const steps = [
-  {
-    number: "01",
-    title: "Kennenlernen",
-    description:
-      "Wir klären deine aktuelle Situation, deine Ziele und die Themen, die für dich wirklich relevant sind.",
-  },
-  {
-    number: "02",
-    title: "Struktur und Vergleich",
-    description:
-      "Bestehende Lösungen werden eingeordnet. Anschließend erhältst du nachvollziehbare Optionen und eine klare Priorisierung.",
-  },
-  {
-    number: "03",
-    title: "Umsetzung und Begleitung",
-    description:
-      "Du entscheidest selbst, welche Schritte umgesetzt werden. Bei beruflichen oder privaten Veränderungen wird die Strategie erneut geprüft.",
-  },
-];
+type ConsultingProcessProps = { data: StartseiteContent["process"] };
 
-export default function ConsultingProcess() {
+export default function ConsultingProcess({ data }: ConsultingProcessProps) {
+  const steps = data.steps;
   return (
     <section className="py-16 md:py-24 bg-navy text-white" aria-labelledby="process-heading">
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           id="process-heading"
           as="h2"
-          title="In drei Schritten zu mehr finanzieller Klarheit"
+          title={data.title}
           className="mb-12 [&_h2]:text-white [&_p]:text-blue-200"
         />
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">

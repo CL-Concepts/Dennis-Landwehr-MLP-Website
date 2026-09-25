@@ -1,0 +1,243 @@
+{
+  "seoTitle": "Finanzberatung für Ärzte und Zahnärzte in {{stadt}}",
+  "seoDescription": "",
+  "hero": {
+    "eyebrow": "Finanzberater bei MLP · Hannover",
+    "title": "Finanzberatung für Human- und Zahnmediziner",
+    "lead": "Klare finanzielle Entscheidungen für Studium, Karriere und eigene Praxis.",
+    "text": "Ich begleite Medizinstudierende, Ärztinnen, Ärzte, Zahnärztinnen und Zahnärzte bei Absicherung, Vermögensaufbau und finanzieller Planung – persönlich, verständlich und passend zur jeweiligen Karrierephase.",
+    "primaryButton": "Unverbindliches Erstgespräch vereinbaren",
+    "secondaryButton": "Zu den Rechnern",
+    "trustItems": [
+      "Spezialisiert auf medizinische Berufswege",
+      "Persönliche und langfristige Begleitung",
+      "Beratung digital oder persönlich",
+      "Komplexe Themen verständlich erklärt"
+    ],
+    "image": "/images/dennis-landwehr-portrait.jpeg",
+    "imageAlt": "Dennis Landwehr, Finanzberater bei MLP Hannover",
+    "badgeStatus": "Beratung verfügbar",
+    "badgeTitle": "Digital & persönlich",
+    "badgeText": "Hannover"
+  },
+  "audiences": {
+    "title": "Wo stehst du gerade?",
+    "subtitle": "Finanzthemen unterscheiden sich je nach Karrierephase deutlich. Wähle deine Situation, um relevante Informationen zu finden.",
+    "cards": [
+      {
+        "title": "Im Studium",
+        "description": "Frühzeitig wichtige Grundlagen schaffen – von der Absicherung bei Famulatur und PJ bis zur langfristigen Sicherung der eigenen Arbeitskraft.",
+        "ctaText": "Finanzen im Studium ordnen",
+        "href": "/studierende",
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+        "imageAlt": "Medizinstudierende lernen gemeinsam in der Bibliothek",
+        "icon": "studium"
+      },
+      {
+        "title": "Im ärztlichen oder zahnärztlichen Beruf",
+        "description": "Versicherungen, Krankenversicherung, Vermögensaufbau und Liquidität auf Einkommen, Karriereziele und persönliche Lebensplanung abstimmen.",
+        "ctaText": "Berufliche Situation besprechen",
+        "href": "/leistungen",
+        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
+        "imageAlt": "Ärztin im weißen Kittel bei der Arbeit",
+        "icon": "beruf"
+      },
+      {
+        "title": "Vor oder in der eigenen Praxis",
+        "description": "Private und betriebliche Finanzen gemeinsam betrachten – von Praxisabsicherung und Finanzierung bis zu Liquiditätsplanung und Vermögensstrategie.",
+        "ctaText": "Praxisfinanzen strukturieren",
+        "href": "/leistungen/liquiditaetsmanagement-mediziner",
+        "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80",
+        "imageAlt": "Moderne medizinische Praxis, heller freundlicher Empfang",
+        "icon": "praxis"
+      }
+    ]
+  },
+  "services": {
+    "title": "Die wichtigsten Finanzthemen für Mediziner auf einen Blick",
+    "subtitle": "Von der Absicherung der Arbeitskraft über die richtige Krankenversicherung bis zum strukturierten Vermögensaufbau – diese Themen sind für Human- und Zahnmediziner besonders relevant."
+  },
+  "career": {
+    "eyebrow": "Von Studium bis Ruhestand",
+    "title": "Finanzplanung, die mit deiner Karriere mitwächst",
+    "subtitle": "Tippe auf eine Karrierephase und sieh, welche Finanzthemen dann im Mittelpunkt stehen.",
+    "phaseLabel": "Phase {{nr}} von {{gesamt}}",
+    "nextButton": "Nächste Phase ansehen",
+    "phases": [
+      {
+        "id": "studium",
+        "label": "Studium",
+        "description": "Erste Absicherung, Grundlagen schaffen",
+        "detail": "Im Studium zählt vor allem eines: früh die richtigen Weichen stellen. Wer jetzt startet, sichert sich günstige Konditionen und einen gesunden Gesundheitsstatus für später.",
+        "topics": [
+          "Berufsunfähigkeit früh sichern",
+          "Krankenversicherung im Studium",
+          "Erste Budget-Struktur"
+        ],
+        "href": "/studierende",
+        "hrefLabel": "Mehr für Studierende"
+      },
+      {
+        "id": "famulatur-pj",
+        "label": "Famulatur & PJ",
+        "description": "Berufshaftpflicht, praktische Erfahrung",
+        "detail": "Mit dem ersten Patientenkontakt entsteht echte berufliche Verantwortung. Eine passende Berufshaftpflicht ist jetzt Pflichtprogramm – oft schon kostenlos oder sehr günstig.",
+        "topics": [
+          "Berufshaftpflicht für Famulatur & PJ",
+          "Auslandsaufenthalte absichern",
+          "Übergang in den Beruf planen"
+        ],
+        "href": "/leistungen/berufshaftpflicht-mediziner",
+        "hrefLabel": "Zur Berufshaftpflicht"
+      },
+      {
+        "id": "berufseinstieg",
+        "label": "Berufseinstieg",
+        "description": "Krankenversicherung, BU, erste Rücklagen",
+        "detail": "Mit dem ersten Gehalt fallen wichtige Entscheidungen: GKV oder PKV, Höhe der BU-Absicherung, Umgang mit dem Versorgungswerk – und der Aufbau erster Rücklagen.",
+        "topics": [
+          "GKV vs. PKV entscheiden",
+          "BU-Rente ans Einkommen anpassen",
+          "Notfallreserve aufbauen"
+        ],
+        "href": "/leistungen/krankenversicherung-mediziner",
+        "hrefLabel": "Krankenversicherung prüfen"
+      },
+      {
+        "id": "facharzt",
+        "label": "Facharzt­laufbahn",
+        "description": "Vermögensaufbau, Versorgungswerk optimieren",
+        "detail": "Steigendes Einkommen schafft Spielraum. Jetzt geht es darum, aus gutem Verdienst eine echte Strategie zu machen – mit klaren Zielen für Vermögen und Altersvorsorge.",
+        "topics": [
+          "Vermögensstrategie entwickeln",
+          "Versorgungswerk einordnen",
+          "Immobilie & Finanzierung"
+        ],
+        "href": "/leistungen/vermoegensaufbau-mediziner",
+        "hrefLabel": "Vermögensaufbau ansehen"
+      },
+      {
+        "id": "niederlassung",
+        "label": "Niederlassung",
+        "description": "Praxisabsicherung, Finanzierung, Liquidität",
+        "detail": "Der Schritt in die eigene Praxis ist auch finanziell der größte. Finanzierung, Absicherung und private Finanzen müssen jetzt als ein Gesamtsystem gedacht werden.",
+        "topics": [
+          "Praxisfinanzierung strukturieren",
+          "Praxis & Inventar absichern",
+          "Private und betriebliche Finanzen trennen"
+        ],
+        "href": "/leistungen/liquiditaetsmanagement-mediziner",
+        "hrefLabel": "Praxisfinanzen strukturieren"
+      },
+      {
+        "id": "praxisfuehrung",
+        "label": "Praxis­führung",
+        "description": "Betriebswirtschaftliche Kontrolle, Team absichern",
+        "detail": "Eine laufende Praxis braucht finanzielle Kontrolle: planbare Rücklagen, abgesicherte Mitarbeitende und Liquidität, die auch in schwächeren Quartalen trägt.",
+        "topics": [
+          "Liquiditätsplanung für die Praxis",
+          "Mitarbeitende absichern",
+          "Rücklagen systematisieren"
+        ],
+        "href": "/leistungen/liquiditaetsmanagement-mediziner",
+        "hrefLabel": "Liquidität strukturieren"
+      },
+      {
+        "id": "ruhestand",
+        "label": "Ruhestands­planung",
+        "description": "Praxisabgabe, Rentenplanung, Vermögensübergabe",
+        "detail": "Praxisabgabe und Ruhestand wollen Jahre im Voraus geplant sein – vom Praxiswert über Versorgungswerk und private Vorsorge bis zur geordneten Vermögensübergabe.",
+        "topics": [
+          "Praxisabgabe vorbereiten",
+          "Einkommensquellen im Ruhestand",
+          "Vermögen geordnet übergeben"
+        ],
+        "href": "/leistungen/vermoegensaufbau-mediziner",
+        "hrefLabel": "Ruhestand planen"
+      }
+    ]
+  },
+  "profile": {
+    "title": "Dein persönlicher Ansprechpartner",
+    "image": "/images/dennis-landwehr-portrait.jpeg",
+    "imageAlt": "Dennis Landwehr – Finanzberater bei MLP, Hannover",
+    "primaryButton": "Dennis kennenlernen",
+    "secondaryButton": "Mehr über mich",
+    "mlpPrefix": "Finanzberater bei",
+    "mlpLinkText": "MLP Finanzberatung SE",
+    "text": "Finanzielle Entscheidungen im medizinischen Berufsleben sind selten isoliert. Krankenversicherung, Berufshaftpflicht, Arbeitskraft, Versorgungswerk, Vermögensaufbau und eine mögliche Niederlassung greifen ineinander.\n\nAls Finanzberater bei MLP unterstütze ich Human- und Zahnmediziner dabei, diese Themen verständlich zu ordnen und fundierte Entscheidungen zu treffen. Im Mittelpunkt stehen deine aktuelle Situation, deine Ziele und ein Konzept, das auch bei beruflichen Veränderungen weiter tragfähig bleibt."
+  },
+  "process": {
+    "title": "In drei Schritten zu mehr finanzieller Klarheit",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Kennenlernen",
+        "description": "Wir klären deine aktuelle Situation, deine Ziele und die Themen, die für dich wirklich relevant sind."
+      },
+      {
+        "number": "02",
+        "title": "Struktur und Vergleich",
+        "description": "Bestehende Lösungen werden eingeordnet. Anschließend erhältst du nachvollziehbare Optionen und eine klare Priorisierung."
+      },
+      {
+        "number": "03",
+        "title": "Umsetzung und Begleitung",
+        "description": "Du entscheidest selbst, welche Schritte umgesetzt werden. Bei beruflichen oder privaten Veränderungen wird die Strategie erneut geprüft."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufige Fragen zur Finanzberatung für Mediziner",
+    "items": [
+      {
+        "id": "faq-wann-finanzberatung-studierende",
+        "question": "Ab wann lohnt sich eine Finanzberatung für Medizinstudierende?",
+        "answer": "Bereits im Studium lassen sich Weichen stellen, die später deutlich aufwändiger oder teurer werden. Besonders die Absicherung der Arbeitskraft und der Umgang mit der Krankenversicherung sind Themen, bei denen ein früher Überblick helfen kann. Eine Beratung muss kein umfassendes Finanzkonzept liefern – häufig reicht es, die relevanten Fragen zu sortieren und die wirklich dringlichen Punkte zu klären. Welche das in deiner Situation sind, lässt sich am besten in einem ersten Gespräch herausfinden.",
+        "category": "studierende"
+      },
+      {
+        "id": "faq-berufshaftpflicht-pj",
+        "question": "Benötige ich im Praktischen Jahr eine eigene Berufshaftpflicht?",
+        "answer": "Im Praktischen Jahr sind Studierende in der Regel in den Haftpflichtschutz der Ausbildungsklinik einbezogen – ob und in welchem Umfang, hängt jedoch vom konkreten Ausbildungsvertrag und der jeweiligen Einrichtung ab. Wer zur Sicherheit eine eigene Absicherung möchte oder spezifische Tätigkeiten außerhalb dieser Einbindung plant, sollte die eigene Situation individuell prüfen. Das gilt besonders für Auslandsaufenthalte und Famulaturen, die außerhalb des regulären Studienrahmens stattfinden.",
+        "category": "studierende"
+      },
+      {
+        "id": "faq-gkv-pkv-wahl",
+        "question": "Wann können Ärztinnen und Ärzte zwischen GKV und PKV wählen?",
+        "answer": "Als angestellte Ärztin oder angestellter Arzt besteht grundsätzlich Versicherungspflicht in der gesetzlichen Krankenversicherung, sofern das Einkommen unter der gesetzlichen Jahresarbeitsentgeltgrenze liegt. Wer darüber liegt, kann sich von der GKV befreien lassen und in die PKV wechseln. Selbstständige und niedergelassene Ärztinnen und Ärzte sind grundsätzlich nicht versicherungspflichtig und können frei wählen. Die geltenden Grenzwerte werden jährlich angepasst – bitte aktuelle Zahlen individuell prüfen. (Stand: bitte vor Veröffentlichung aktualisieren.)",
+        "category": "aerzte"
+      },
+      {
+        "id": "faq-bu-versorgungswerk",
+        "question": "Warum kann eine Berufsunfähigkeitsversicherung trotz Versorgungswerk relevant sein?",
+        "answer": "Das Versorgungswerk bietet eine berufsständische Altersvorsorge und in vielen Fällen auch Leistungen bei Berufsunfähigkeit. Allerdings unterscheiden sich die Bedingungen und Leistungshöhen je nach Versorgungswerk und individuellem Beitragsstand erheblich. Ob die Leistungen ausreichen, um den gewohnten Lebensstandard zu sichern, sollte individuell geprüft werden. Zusätzlich gibt es beim Versorgungswerk häufig Wartezeiten und besondere Voraussetzungen. Eine ergänzende Absicherung kann deshalb sinnvoll sein – das hängt von der persönlichen Situation ab.",
+        "category": "aerzte"
+      },
+      {
+        "id": "faq-vermögensaufbau-start",
+        "question": "Wie beginnt man als Mediziner sinnvoll mit dem Vermögensaufbau?",
+        "answer": "Ein strukturierter Einstieg beginnt damit, laufende Einnahmen und Ausgaben zu kennen, eine ausreichende Notfallreserve aufzubauen und bestehende Absicherungen zu kennen. Erst danach macht es Sinn, langfristig zu sparen oder zu investieren. Welche Beträge und Anlageformen passen, hängt von Zielen, Zeithorizont und persönlicher Risikobereitschaft ab. Es gibt keine allgemein gültige Reihenfolge – aber eine strukturierte Bestandsaufnahme hilft, die Prioritäten zu setzen.",
+        "category": "aerzte"
+      },
+      {
+        "id": "faq-liquiditaet-praxis",
+        "question": "Was gehört zum Liquiditätsmanagement einer Arzt- oder Zahnarztpraxis?",
+        "answer": "Zu einem funktionierenden Liquiditätsmanagement gehören neben dem Überblick über laufende Einnahmen und Ausgaben auch geplante Rücklagen für Steuern, Investitionen und Personalkosten. Schwankende Abrechnungszyklen, unterschiedliche Kostenarten und die Trennung privater und betrieblicher Zahlungsströme machen eine strukturierte Planung notwendig. Dieser Bereich berührt auch steuerliche und betriebswirtschaftliche Fragen – eine enge Abstimmung mit einem Steuerberater ist dabei sinnvoll.",
+        "category": "praxis"
+      },
+      {
+        "id": "faq-digital-beratung",
+        "question": "Ist die Beratung auch digital möglich?",
+        "answer": "Ja. Eine Beratung ist sowohl persönlich in Hannover als auch über eine sichere digitale Verbindung möglich. Das Format richtet sich nach deiner Situation und deinen Präferenzen. Für ein erstes Kennenlerngespräch empfehlen sich beide Wege gleichermaßen. Unterlagen können vorab sicher übermittelt werden, sodass das Gespräch effizient und gut vorbereitet stattfinden kann.",
+        "category": "allgemein"
+      },
+      {
+        "id": "faq-erstgespraech-ablauf",
+        "question": "Wie läuft ein erstes Gespräch ab?",
+        "answer": "Im ersten Gespräch steht das Kennenlernen im Vordergrund: deine aktuelle Situation, deine Ziele und die Themen, die für dich relevant sind. Es geht nicht darum, sofort Lösungen zu präsentieren, sondern zunächst ein klares Bild deiner Lage zu bekommen. Darauf aufbauend erhältst du eine Einschätzung, welche Themen Priorität haben sollten – und in welchen Bereichen kein oder kaum Handlungsbedarf besteht. Das erste Gespräch dauert in der Regel zwischen 30 und 60 Minuten.",
+        "category": "allgemein"
+      }
+    ]
+  }
+}

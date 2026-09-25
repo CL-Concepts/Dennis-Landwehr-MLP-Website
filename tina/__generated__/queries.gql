@@ -1,0 +1,494 @@
+query einstellungen($relativePath: String!) {
+  einstellungen(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...EinstellungenParts
+  }
+}
+
+query einstellungenConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: EinstellungenFilter) {
+  einstellungenConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...EinstellungenParts
+      }
+    }
+  }
+}
+
+query startseite($relativePath: String!) {
+  startseite(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...StartseiteParts
+  }
+}
+
+query startseiteConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: StartseiteFilter) {
+  startseiteConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...StartseiteParts
+      }
+    }
+  }
+}
+
+query leistungsuebersicht($relativePath: String!) {
+  leistungsuebersicht(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...LeistungsuebersichtParts
+  }
+}
+
+query leistungsuebersichtConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: LeistungsuebersichtFilter) {
+  leistungsuebersichtConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...LeistungsuebersichtParts
+      }
+    }
+  }
+}
+
+query leistung($relativePath: String!) {
+  leistung(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...LeistungParts
+  }
+}
+
+query leistungConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: LeistungFilter) {
+  leistungConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...LeistungParts
+      }
+    }
+  }
+}
+
+query studierende($relativePath: String!) {
+  studierende(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...StudierendeParts
+  }
+}
+
+query studierendeConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: StudierendeFilter) {
+  studierendeConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...StudierendeParts
+      }
+    }
+  }
+}
+
+query ueberMich($relativePath: String!) {
+  ueberMich(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...UeberMichParts
+  }
+}
+
+query ueberMichConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: UeberMichFilter) {
+  ueberMichConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...UeberMichParts
+      }
+    }
+  }
+}
+
+query kontakt($relativePath: String!) {
+  kontakt(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...KontaktParts
+  }
+}
+
+query kontaktConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: KontaktFilter) {
+  kontaktConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...KontaktParts
+      }
+    }
+  }
+}
+
+query rechtstext($relativePath: String!) {
+  rechtstext(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...RechtstextParts
+  }
+}
+
+query rechtstextConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: RechtstextFilter) {
+  rechtstextConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...RechtstextParts
+      }
+    }
+  }
+}
+
+query rechner($relativePath: String!) {
+  rechner(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...RechnerParts
+  }
+}
+
+query rechnerConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: RechnerFilter) {
+  rechnerConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...RechnerParts
+      }
+    }
+  }
+}

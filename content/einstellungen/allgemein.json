@@ -1,0 +1,115 @@
+{
+  "name": "Dennis Landwehr",
+  "professionalTitle": "Finanzberater bei MLP",
+  "specialization": "Finanzberatung für Humanmediziner, Zahnmediziner und Medizinstudierende",
+  "city": "Hannover",
+  "region": "Hannover",
+  "phone": "01754960247",
+  "phoneFormatted": "0175 496 02 47",
+  "email": "dennis.landwehr@mlp.de",
+  "address": {
+    "street": "Marienstr. 11",
+    "zip": "30171",
+    "city": "Hannover",
+    "country": "Deutschland",
+    "full": "Marienstr. 11, 30171 Hannover"
+  },
+  "bookingUrl": "https://onlineberatung.mlp.de/consultant/dennis.landwehr",
+  "mlpProfileUrl": "https://mlp-financify.de/hannover/team/profile/dennis-landwehr/",
+  "description": "Finanzberatung für Human- und Zahnmediziner in Hannover. Dennis Landwehr, Finanzberater bei MLP, begleitet Medizinstudierende, Ärztinnen und Ärzte sowie Zahnärzte bei Absicherung, Vermögensaufbau und finanzieller Planung.",
+  "navigation": [
+    {
+      "label": "Leistungen",
+      "href": "/leistungen",
+      "children": [
+        {
+          "label": "Berufshaftpflicht",
+          "href": "/leistungen/berufshaftpflicht-mediziner"
+        },
+        {
+          "label": "Krankenversicherung",
+          "href": "/leistungen/krankenversicherung-mediziner"
+        },
+        {
+          "label": "Berufsunfähigkeit",
+          "href": "/leistungen/berufsunfaehigkeit-mediziner"
+        },
+        {
+          "label": "Vermögensaufbau",
+          "href": "/leistungen/vermoegensaufbau-mediziner"
+        },
+        {
+          "label": "Liquiditätsmanagement",
+          "href": "/leistungen/liquiditaetsmanagement-mediziner"
+        }
+      ]
+    },
+    {
+      "label": "Für Studierende",
+      "href": "/studierende",
+      "children": []
+    },
+    {
+      "label": "Über mich",
+      "href": "/ueber-mich",
+      "children": []
+    }
+  ],
+  "buttons": {
+    "header": "Termin vereinbaren",
+    "mobile": "Termin vereinbaren",
+    "serviceCard": "Termin vereinbaren"
+  },
+  "breadcrumbHome": "Startseite",
+  "footer": {
+    "bookingButton": "Jetzt Termin vereinbaren",
+    "contactTitle": "Kontakt",
+    "mlpLinkText": "MLP-Beraterprofil ansehen",
+    "legalTitle": "Rechtliches",
+    "legalLinks": [
+      {
+        "label": "Impressum",
+        "href": "/impressum"
+      },
+      {
+        "label": "Datenschutz",
+        "href": "/datenschutz"
+      },
+      {
+        "label": "Rechtliche Hinweise",
+        "href": "/rechtliche-hinweise"
+      }
+    ],
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "legal": {
+    "noticeTitle": "Rechtlicher Hinweis",
+    "disclaimer": "Die Inhalte dieser Website dienen ausschließlich der allgemeinen Information und stellen keine individuelle Anlage-, Versicherungs-, Rechts- oder Steuerberatung dar. Ob eine Lösung für Ihre Situation geeignet ist, kann nur unter Berücksichtigung Ihrer persönlichen Umstände geprüft werden.",
+    "personalSite": "Persönliche Beraterwebsite von {{name}}. Diese Website ist kein offizieller Unternehmensauftritt der MLP Finanzberatung SE."
+  },
+  "finalCta": {
+    "title": "Lass uns deine nächsten finanziellen Schritte strukturieren.",
+    "text": "In einem ersten Gespräch klären wir, welche Themen für deine aktuelle Karrierephase relevant sind und wo konkreter Handlungsbedarf besteht.",
+    "button": "Jetzt Termin vereinbaren",
+    "note": "Beratung möglich: digital per Videokonferenz oder persönlich in {{stadt}}"
+  },
+  "servicePage": {
+    "breadcrumbParent": "Leistungen",
+    "atAGlanceTitle": "Auf einen Blick",
+    "bookingButton": "Persönliche Situation besprechen",
+    "contactLink": "Oder schreib mir",
+    "authorPrefix": "Autor:",
+    "authorName": "Dennis Landwehr",
+    "authorSuffix": ", Finanzberater bei MLP",
+    "updatedPrefix": "Zuletzt aktualisiert:",
+    "relatedTitle": "Verwandte Themen",
+    "faqTitle": "Häufige Fragen"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Seite nicht gefunden",
+    "text": "Die gesuchte Seite existiert leider nicht. Möglicherweise wurde sie verschoben oder die URL enthält einen Tippfehler.",
+    "homeButton": "Zur Startseite",
+    "bookingButton": "Termin vereinbaren"
+  }
+}

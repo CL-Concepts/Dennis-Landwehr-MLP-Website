@@ -1,0 +1,72 @@
+{
+  "order": 2,
+  "seoTitle": "Datenschutzerklärung",
+  "seoDescription": "Datenschutzerklärung der persönlichen Beraterwebsite von {{name}}.",
+  "breadcrumb": "Datenschutz",
+  "title": "Datenschutzerklärung",
+  "warningTitle": "⚠️ Platzhalter",
+  "warningText": "⚠️ PLATZHALTER – Datenschutzerklärung muss vor Veröffentlichung juristisch geprüft werden. Sie muss alle verwendeten Technologien, Dienste und Verarbeitungszwecke vollständig abbilden.",
+  "sections": [
+    {
+      "heading": "Verantwortliche Stelle",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "anschrift",
+          "boldFirstLine": false,
+          "lines": ["{{name}}", "{{strasse}}", "{{plz}} {{ort}}", "E-Mail: {{email}}"]
+        }
+      ]
+    },
+    {
+      "heading": "Erhobene Daten",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Diese Website verwendet keine Tracking-Technologien und setzt standardmäßig keine Cookies außer technisch notwendigen ein. Es werden keine personenbezogenen Daten erhoben, außer jenen, die Sie selbst übermitteln (z. B. beim Klick auf Kontakt-Links)."
+        }
+      ]
+    },
+    {
+      "heading": "Externe Links",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Diese Website enthält Links zu externen Diensten, insbesondere zum Terminbuchungssystem der MLP und zum MLP-Beraterprofil. Beim Aufruf dieser Links gelten die Datenschutzbestimmungen der jeweiligen Anbieter."
+        }
+      ]
+    },
+    {
+      "heading": "Hosting",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "[Platzhalter: Angaben zum Hosting-Anbieter – vor Veröffentlichung eintragen]"
+        }
+      ]
+    },
+    {
+      "heading": "Ihre Rechte",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten sowie das Recht auf Datenübertragbarkeit und Widerspruch. Wenden Sie sich dazu bitte an die oben genannte Kontaktadresse."
+        }
+      ]
+    },
+    {
+      "heading": "Beschwerderecht",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. [Platzhalter: Zuständige Aufsichtsbehörde eintragen]"
+        }
+      ]
+    }
+  ]
+}

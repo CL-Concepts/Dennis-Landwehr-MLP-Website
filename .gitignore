@@ -44,3 +44,11 @@ Thumbs.db
 *.icloud
 .vscode/
 .idea/
+
+# =====================================================================
+# Projektspezifisch: TinaCMS
+# =====================================================================
+/tina/__generated__/db
+/tina/tina-lock.json.bak
+# Der Editor unter /admin wird beim Build erzeugt
+public/admin

@@ -1,0 +1,17 @@
+{
+  "seoTitle": "Kontakt und Terminbuchung",
+  "seoDescription": "Kontakt zu Dennis Landwehr, Finanzberater bei MLP in {{stadt}}. Termin vereinbaren für Finanzberatung für Ärzte und Zahnärzte.",
+  "breadcrumb": "Kontakt",
+  "title": "Kontakt aufnehmen",
+  "intro": "Der einfachste Weg ist die direkte Terminbuchung über den folgenden Link. Alternativ kannst du mich telefonisch oder per E-Mail erreichen.",
+  "bookingTitle": "Termin online buchen",
+  "bookingText": "Direkte Terminbuchung über das MLP-Beratungssystem – digital oder persönlich in {{stadt}}.",
+  "bookingButton": "Jetzt Termin vereinbaren",
+  "phoneTitle": "Telefon",
+  "emailTitle": "E-Mail",
+  "emailNote": "Bitte übermitteln Sie keine sensiblen Gesundheitsdaten per E-Mail.",
+  "officeTitle": "Büro",
+  "officeNote": "Beratung ist auch digital per Videokonferenz möglich.",
+  "profileTitle": "MLP-Beraterprofil",
+  "profileLinkText": "Beraterprofil auf mlp-financify.de aufrufen"
+}

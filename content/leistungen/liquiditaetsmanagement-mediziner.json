@@ -1,0 +1,150 @@
+{
+  "order": 5,
+  "title": "Liquiditätsmanagement für Mediziner",
+  "shortText": "Eine klare Trennung von laufenden Ausgaben, Rücklagen und langfristigem Vermögen schafft finanzielle Kontrolle – privat ebenso wie in der eigenen Praxis.",
+  "highlights": [
+    "Notfallreserve",
+    "Planbare Rücklagen",
+    "Private und berufliche Zahlungsströme",
+    "Liquiditätsplanung für Praxisinhaber"
+  ],
+  "ctaText": "Liquidität strukturieren",
+  "icon": "bar-chart",
+  "seoTitle": "Liquiditätsmanagement für Arzt- und Zahnarztpraxen",
+  "seoDescription": "Liquiditätsmanagement für niedergelassene Ärztinnen und Ärzte sowie Zahnärzte: Private und betriebliche Zahlungsströme strukturieren, Rücklagen planen, Praxisliquidität sichern.",
+  "breadcrumb": "Liquiditätsmanagement",
+  "h1": "Liquiditätsmanagement für Arzt- und Zahnarztpraxen",
+  "summary": "Finanzielle Kontrolle beginnt mit einem klaren Überblick über Einnahmen, Ausgaben und Rücklagen – privat und betrieblich. Für niedergelassene Ärztinnen und Ärzte sowie Zahnärzte ist diese Struktur besonders wichtig, weil beide Bereiche eng miteinander verbunden sind.",
+  "updatedAt": "2025-06-01",
+  "atAGlance": [
+    {
+      "label": "Für wen relevant",
+      "value": "Niedergelassene, Praxisinhaber, angestellte Ärzte mit variablem Einkommen"
+    },
+    {
+      "label": "Wann prüfen",
+      "value": "Vor Niederlassung, bei wachsender Praxis, jährlich"
+    },
+    {
+      "label": "Themen im Gespräch",
+      "value": "Notfallreserve, Betriebskosten, Steuerrücklagen, Trennung privat/betrieblich"
+    },
+    {
+      "label": "Nächster Schritt",
+      "value": "Persönliches Gespräch"
+    }
+  ],
+  "sections": [
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Für alle – ob angestellt oder selbstständig – gilt: Wer seine Einnahmen und Ausgaben kennt, kann gezielt planen. Die Grundstruktur besteht aus vier Bereichen:"
+        },
+        {
+          "_template": "karten",
+          "karten": [
+            {
+              "titel": "Laufende Ausgaben",
+              "text": "Miete, Versicherungen, Lebenshaltung"
+            },
+            {
+              "titel": "Notfallreserve",
+              "text": "Kurzfristig verfügbar, 3–6 Monatsausgaben als Orientierung"
+            },
+            {
+              "titel": "Mittelfristige Rücklagen",
+              "text": "Geplante Ausgaben, Anschaffungen"
+            },
+            {
+              "titel": "Langfristiger Aufbau",
+              "text": "Altersvorsorge, Investitionen, Vermögen"
+            }
+          ]
+        },
+        {
+          "_template": "notiz",
+          "text": "Variable Einkommen – etwa durch Bereitschaftsdienste oder Nebentätigkeiten – erschweren die Planung. Hier hilft ein Durchschnittswert als Planungsgrundlage."
+        }
+      ],
+      "heading": "Private Liquidität strukturieren"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Praxen haben eigene Zahlungsrhythmen und Kostenstrukturen. Eine funktionierende betriebliche Liquiditätsplanung berücksichtigt:"
+        },
+        {
+          "_template": "liste",
+          "punkte": [
+            "Laufende Betriebskosten: Personal, Miete, Verbrauchsmaterial",
+            "Steuerrücklagen: Einkommensteuer, Umsatzsteuer (falls relevant), Gewerbesteuer",
+            "Investitionsrücklagen: Geräte, Software, Praxisausstattung",
+            "Schwankende Abrechnungseingänge und Quartalszahlungen",
+            "Außerplanmäßige Ausgaben: Reparaturen, Ausfälle, Vertretungskosten"
+          ]
+        },
+        {
+          "_template": "hinweis",
+          "label": "Hinweis:",
+          "text": "Steuerliche und buchhalterische Fragen zur Praxis sollten in enger Abstimmung mit einem Steuerberater geklärt werden. Die Finanzberatung kann die Gesamtstruktur unterstützen, ersetzt aber keine steuerliche Fachberatung."
+        }
+      ],
+      "heading": "Betriebliche Liquidität in der Praxis"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Eine klare Trennung von privatem und betrieblichem Konto ist der erste Schritt zu finanzieller Übersicht. Regelmäßige, vorab festgelegte Privatentnahmen schaffen Planungssicherheit und erleichtern die Buchhaltung. Wer beides vermischt, verliert den Überblick über beide Bereiche. Gerade in wachsenden Praxen steigt dieser Aufwand deutlich."
+        }
+      ],
+      "heading": "Trennung von privat und betrieblich"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Die Niederlassung bringt einen erheblichen Liquiditätsbedarf mit sich – Praxisausstattung, Mietkaution, erste Gehaltsauszahlungen, bevor eigene Einnahmen fließen. Eine realistische Planung der Anlaufphase ist Teil jeder soliden Praxisgründung. Welche Mittel benötigt werden und wie diese strukturiert sein sollten, ist ein eigenständiges Beratungsthema."
+        }
+      ],
+      "heading": "Liquiditätsplanung vor der Niederlassung"
+    }
+  ],
+  "calculator": "keiner",
+  "faqs": [
+    {
+      "id": "lq-faq-notfallreserve",
+      "question": "Wie hoch sollte eine Notfallreserve sein?",
+      "answer": "Als grobe Orientierung gelten drei bis sechs Nettomonatsgehälter als privater Liquiditätspuffer. Für Praxisinhaber kommt ein zusätzlicher betrieblicher Puffer hinzu, der sich an den laufenden Betriebskosten orientiert. Die genaue Höhe hängt von deiner persönlichen Situation, dem Einkommensverlauf und den Fixkosten ab. Es gibt keine universelle Faustregel – das Ziel ist eine Situation, in der unerwartete Ausgaben nicht zu Engpässen führen.",
+      "category": "praxis"
+    },
+    {
+      "id": "lq-faq-praxis",
+      "question": "Was ist bei der Liquiditätsplanung einer Praxis zu beachten?",
+      "answer": "Praxen haben besondere Zahlungsrhythmen: Abrechnungen laufen verzögert ein, Quartalszahlungen können schwanken, Gehälter und Mieten fallen dagegen regelmäßig an. Hinzu kommen Steuerzahlungen und Investitionsbedarfe. Eine strukturierte Liquiditätsplanung trennt laufende Betriebsausgaben, Rücklagen für Steuern und Investitionen sowie außerplanmäßige Ausgaben. Steuerliche Aspekte sollten dabei eng mit einem Steuerberater abgestimmt werden.",
+      "category": "praxis"
+    },
+    {
+      "id": "lq-faq-privat-betrieblich",
+      "question": "Warum ist die Trennung von privat und betrieblich wichtig?",
+      "answer": "Ohne klare Trennung wird es schwer, den tatsächlichen wirtschaftlichen Stand der Praxis zu erkennen oder private Ziele gezielt zu verfolgen. Außerdem ist die Trennung aus steuerlichen und buchhalterischen Gründen notwendig. Eine saubere Struktur – separates Geschäftskonto, definierte Entnahmeregeln – schafft Übersicht und reduziert administrative Fehler.",
+      "category": "praxis"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Vermögensaufbau",
+      "href": "/leistungen/vermoegensaufbau-mediziner"
+    },
+    {
+      "label": "Berufshaftpflicht",
+      "href": "/leistungen/berufshaftpflicht-mediziner"
+    },
+    {
+      "label": "Krankenversicherung",
+      "href": "/leistungen/krankenversicherung-mediziner"
+    }
+  ]
+}

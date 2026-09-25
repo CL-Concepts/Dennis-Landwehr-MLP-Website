@@ -1,0 +1,34 @@
+{
+  "eyebrow": "Interaktive Rechner",
+  "title": "Verschaff dir in 30 Sekunden einen ersten Überblick",
+  "subtitle": "Bewege die Regler und sieh sofort, was deine Zahlen bedeuten – als Ausgangspunkt für ein fundiertes Gespräch.",
+  "tabBu": "BU-Lücken-Check",
+  "tabWealth": "Vermögensrechner",
+  "disclaimer": "Vereinfachte Modellrechnung mit pauschalen Annahmen, ohne Steuern, Inflation, Kosten und individuelle Ansprüche. Die Ergebnisse sind keine Prognose und ersetzen keine individuelle Beratung – die tatsächliche Situation klären wir gemeinsam im Gespräch.",
+  "wealth": {
+    "monthlyLabel": "Monatliche Sparrate",
+    "yearsLabel": "Anlagedauer",
+    "rateLabel": "Angenommene Rendite p. a.",
+    "investedLabel": "Eingezahlt",
+    "gainLabel": "Wertzuwachs",
+    "totalLabel": "Mögliches Endkapital nach {{jahre}} Jahren",
+    "chartStart": "heute",
+    "chartEnd": "in {{jahre}} Jahren",
+    "legendInvested": "Eigene Einzahlungen",
+    "legendGrowth": "Mögliche Wertentwicklung"
+  },
+  "bu": {
+    "incomeLabel": "Monatliches Nettoeinkommen (Ziel bei Studierenden: künftiges Einkommen)",
+    "statusLegend": "Berufliche Situation",
+    "statusStudium": "Im Studium",
+    "statusAngestellt": "Angestellt",
+    "statusSelbststaendig": "Selbstständig / Praxis",
+    "needLabel": "Absicherungsbedarf (ca. 75 % vom Netto)",
+    "coverLabel": "Gesetzliche Absicherung (Modellannahme)",
+    "gapLabel": "Mögliche monatliche Versorgungslücke",
+    "textStudium": "Als Studierende:r besteht in der Regel noch kein Anspruch auf gesetzliche Erwerbsminderungsrente – gleichzeitig ist der Einstieg in die Absicherung jetzt am günstigsten.",
+    "textAngestellt": "Die gesetzliche Erwerbsminderungsrente deckt nur einen Teil – und greift erst, wenn kaum noch irgendeine Tätigkeit möglich ist, nicht speziell der Arztberuf.",
+    "textSelbststaendig": "Ohne eigene Vorsorge besteht bei Selbstständigkeit meist kein gesetzlicher Schutz. Das Versorgungswerk leistet oft erst bei vollständiger Berufsaufgabe.",
+    "button": "Lücke im Erstgespräch prüfen lassen"
+  }
+}

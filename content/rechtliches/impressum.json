@@ -1,0 +1,82 @@
+{
+  "order": 1,
+  "seoTitle": "Impressum",
+  "seoDescription": "Impressum der persönlichen Beraterwebsite von {{name}}, {{berufsbezeichnung}}.",
+  "breadcrumb": "Impressum",
+  "title": "Impressum",
+  "warningTitle": "⚠️ Platzhalter",
+  "warningText": "⚠️ PLATZHALTER – Noch nicht juristisch geprüft. Vor Veröffentlichung ist eine anwaltliche Prüfung und die Compliance-Freigabe durch MLP erforderlich.",
+  "sections": [
+    {
+      "heading": "Angaben gemäß § 5 TMG",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "anschrift",
+          "boldFirstLine": true,
+          "lines": [
+            "{{name}}",
+            "{{berufsbezeichnung}}",
+            "{{strasse}}",
+            "{{plz}} {{ort}}",
+            "{{land}}"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Kontakt",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Telefon: {{telefon}}"
+        },
+        {
+          "_template": "absatz",
+          "text": "E-Mail: {{email}}"
+        }
+      ]
+    },
+    {
+      "heading": "Berufsbezeichnung und -recht",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Berufsbezeichnung: {{berufsbezeichnung}}\n[Zuständige Aufsichtsbehörde: Platzhalter – vor Veröffentlichung eintragen]\n[Berufsrechtliche Regelungen: Platzhalter – vor Veröffentlichung eintragen]"
+        }
+      ]
+    },
+    {
+      "heading": "Hinweis",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "{{hinweis-beraterwebsite}}"
+        }
+      ]
+    },
+    {
+      "heading": "MLP Finanzberatung SE",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Dennis Landwehr ist als Finanzberater für die MLP Finanzberatung SE tätig. Weitere Informationen finden Sie auf dem [offiziellen MLP-Beraterprofil]({{mlp-profil-url}})."
+        }
+      ]
+    },
+    {
+      "heading": "Haftungsausschluss",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "[Platzhalter: Haftungsausschluss für Inhalte, Links und Urheberrecht – vor Veröffentlichung juristisch prüfen lassen]"
+        }
+      ]
+    }
+  ]
+}
