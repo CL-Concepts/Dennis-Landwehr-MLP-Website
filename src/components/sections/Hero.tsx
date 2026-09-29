@@ -1,15 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import BookingLink from "@/components/ui/BookingLink";
+import type { StartseiteContent } from "@/lib/content";
 
-const trustIndicators = [
-  "Spezialisiert auf medizinische Berufswege",
-  "Persönliche und langfristige Begleitung",
-  "Beratung digital oder persönlich",
-  "Komplexe Themen verständlich erklärt",
-];
+type HeroProps = { data: StartseiteContent["hero"] };
 
-export default function Hero() {
+export default function Hero({ data }: HeroProps) {
   return (
     <section
       className="relative gradient-hero py-16 md:py-24 lg:py-32 overflow-hidden"
@@ -53,27 +49,25 @@ export default function Hero() {
           {/* Text */}
           <div>
             <p className="animate-fade-up text-primary font-semibold text-sm uppercase tracking-widest mb-4">
-              Finanzberater bei MLP · Hannover
+              {data.eyebrow}
             </p>
             <h1
               id="hero-heading"
               className="animate-fade-up animate-delay-100 text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-tight text-balance mb-6"
             >
-              Finanzberatung für Human- und Zahnmediziner
+              {data.title}
             </h1>
             <p className="animate-fade-up animate-delay-200 text-xl text-foreground font-medium mb-4 text-balance">
-              Klare finanzielle Entscheidungen für Studium, Karriere und eigene Praxis.
+              {data.lead}
             </p>
             <p className="animate-fade-up animate-delay-200 text-base text-muted leading-relaxed mb-8 max-w-lg">
-              Ich begleite Medizinstudierende, Ärztinnen, Ärzte, Zahnärztinnen und Zahnärzte bei
-              Absicherung, Vermögensaufbau und finanzieller Planung – persönlich, verständlich und
-              passend zur jeweiligen Karrierephase.
+              {data.text}
             </p>
 
             {/* CTAs */}
             <div className="animate-fade-up animate-delay-300 flex flex-col sm:flex-row gap-3 mb-10">
               <BookingLink source="hero" size="lg">
-                Unverbindliches Erstgespräch vereinbaren
+                {data.primaryButton}
               </BookingLink>
               <Link
                 href="/#rechner"
@@ -93,7 +87,7 @@ export default function Hero() {
                     d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
                   />
                 </svg>
-                Zu den Rechnern
+                {data.secondaryButton}
               </Link>
             </div>
 
@@ -102,7 +96,7 @@ export default function Hero() {
               className="animate-fade-up animate-delay-400 space-y-2"
               aria-label="Leistungsmerkmale"
             >
-              {trustIndicators.map((item) => (
+              {data.trustItems.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-sm text-muted">
                   <span className="w-5 h-5 bg-warm rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
@@ -130,8 +124,8 @@ export default function Hero() {
           <div className="relative animate-fade-up animate-delay-200">
             <div className="relative rounded-2xl overflow-hidden shadow-card-hover bg-secondary aspect-[4/5] lg:aspect-[3/4]">
               <Image
-                src="/images/dennis-landwehr-portrait.jpeg"
-                alt="Dennis Landwehr, Finanzberater bei MLP Hannover"
+                src={data.image}
+                alt={data.imageAlt}
                 fill
                 className="object-cover object-top"
                 priority
@@ -146,10 +140,10 @@ export default function Hero() {
                   className="w-2 h-2 rounded-full bg-teal animate-pulse-dot flex-shrink-0"
                   aria-hidden="true"
                 />
-                Beratung verfügbar
+                {data.badgeStatus}
               </p>
-              <p className="text-sm font-semibold text-navy mt-1">Digital &amp; persönlich</p>
-              <p className="text-xs text-muted mt-1">Hannover</p>
+              <p className="text-sm font-semibold text-navy mt-1">{data.badgeTitle}</p>
+              <p className="text-xs text-muted mt-1">{data.badgeText}</p>
             </div>
           </div>
         </div>

@@ -1,0 +1,34 @@
+{
+  "seoTitle": "Leistungen – Finanzberatung für Ärzte und Zahnärzte",
+  "seoDescription": "Berufshaftpflicht, Krankenversicherung, Berufsunfähigkeit, Vermögensaufbau und Liquiditätsmanagement für Human- und Zahnmediziner – Überblick aller Leistungen.",
+  "breadcrumb": "Leistungen",
+  "title": "Finanzberatung für Mediziner – alle Leistungen",
+  "subtitle": "Finanzielle Themen im medizinischen Berufsleben greifen ineinander. Hier finden Sie einen Überblick über die Bereiche, die für Human- und Zahnmediziner besonders relevant sind.",
+  "phasesTitle": "Beratung für alle Karrierephasen",
+  "phases": [
+    {
+      "title": "Human- und Zahnmedizin im Studium",
+      "text": "Erste Absicherungsthemen, Krankenversicherung, Berufsunfähigkeit im Studium – frühzeitig die richtigen Grundlagen legen.",
+      "linkText": "Mehr für Studierende",
+      "linkHref": "/studierende"
+    },
+    {
+      "title": "Ärztinnen und Ärzte im Berufseinstieg",
+      "text": "PKV vs. GKV, Berufsunfähigkeit, erste Rücklagen – der Berufseinstieg bringt viele neue Finanzfragen mit sich.",
+      "linkText": "",
+      "linkHref": ""
+    },
+    {
+      "title": "Fachärztliche Laufbahn",
+      "text": "Steigendes Einkommen, Versorgungswerk, Vermögensaufbau – strukturierte Planung für die mittlere Karrierephase.",
+      "linkText": "",
+      "linkHref": ""
+    },
+    {
+      "title": "Niederlassung und Praxisführung",
+      "text": "Praxisabsicherung, Liquiditätsplanung, betriebliche und private Finanzen gemeinsam betrachten.",
+      "linkText": "",
+      "linkHref": ""
+    }
+  ]
+}

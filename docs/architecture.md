@@ -2,20 +2,21 @@
 
 ## In einem Satz
 
-Eine statisch vorgerenderte Next.js-Website, deren Inhalte komplett im Code stehen; GitHub speichert
-den Code, Vercel baut und veröffentlicht ihn automatisch.
+Eine statisch vorgerenderte Next.js-Website, deren Inhalte als JSON-Dateien im Repository liegen und
+über den Editor TinaCMS bearbeitet werden; GitHub speichert alles, Vercel baut und veröffentlicht es.
 
 ## Bild
 
 ```
- Entwickler (Claude Code, lokal)
-        │  git push (Branch)
+ Code-Änderung                          Inhalts-Änderung
+ (Claude Code, lokal)                   (Dennis im Editor /admin)
+        │ git push (Branch → PR)                │ Speichern
+        ▼                                       ▼
+ GitHub ── "CL-Concepts/Dennis-Landwehr-MLP-Website" ◄── Tina Cloud schreibt Commit auf main
+        │ Vercel beobachtet das Repository
         ▼
- GitHub  ── Repository "Dennis-Landwehr-MLP-Website" (privat)
-        │  Vercel beobachtet das Repository
-        ▼
- Vercel  ── Branch  → Vorschau-URL (zum Prüfen)
-        └─ main    → Production → https://dennis-landwehr.com
+ Vercel ── Branch → Vorschau-URL (zum Prüfen)
+        └─ main   → Production → https://dennis-landwehr.com  (zurzeit Wartungsseite)
 ```
 
 ## Bausteine
@@ -31,8 +32,10 @@ den Code, Vercel baut und veröffentlicht ihn automatisch.
 
 ## Bewusste Entscheidungen
 
-- **Kein CMS**: Der Kunde pflegt keine Inhalte selbst; jede Änderung läuft über die Agentur.
-  Das hält die Seite einfach und compliance-sicher (MLP-Freigaben).
+- **Feste Seitenstruktur im CMS**: Dennis ändert alle sichtbaren Texte und Bilder, kann aber keine
+  Seiten anlegen, löschen oder Links umbiegen. Aufbau und Gestaltung bleiben bei der Agentur.
+- **Statische Seiten**: Inhalte werden beim Build eingelesen – schnell und unabhängig davon, ob Tina
+  Cloud gerade erreichbar ist.
 - **Kein Tracking**: keine Cookies, kein Banner. Analytics erst nach Einwilligungslösung.
 - **Security-Header** in `next.config.ts` (nosniff, DENY-Framing, Referrer-Policy).
 

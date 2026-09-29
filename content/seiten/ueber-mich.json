@@ -1,0 +1,29 @@
+{
+  "seoTitle": "Über mich – {{name}}, {{berufsbezeichnung}}",
+  "seoDescription": "Dennis Landwehr ist Finanzberater bei MLP in Hannover, spezialisiert auf Human- und Zahnmediziner. Erfahren Sie mehr über Beratungsansatz und Spezialisierung.",
+  "breadcrumb": "Über mich",
+  "image": "/images/dennis-landwehr-portrait.jpeg",
+  "imageAlt": "Dennis Landwehr – Finanzberater bei MLP Hannover, spezialisiert auf Mediziner",
+  "contactTitle": "Kontakt",
+  "mlpLinkText": "MLP-Beraterprofil aufrufen",
+  "eyebrow": "Über mich",
+  "title": "Dein persönlicher Ansprechpartner für Finanzthemen in der Medizin",
+  "specializationTitle": "Spezialisierung",
+  "specializations": [
+    "Humanmediziner – von Studium bis Niederlassung",
+    "Zahnmediziner – von Studium bis Praxisübergabe",
+    "Berufseinstieg und Facharztlaufbahn",
+    "Praxisgründung und Praxisführung"
+  ],
+  "activityTitle": "Tätigkeit",
+  "activityText": "**{{name}}** ist {{berufsbezeichnung}} und tätig für Human- und Zahnmediziner in {{stadt}} und digital. Diese Website ist eine persönliche Beraterwebsite und kein offizieller Unternehmensauftritt der MLP Finanzberatung SE.",
+  "button": "Dennis kennenlernen",
+  "topicsTitle": "Beratungsthemen",
+  "personal": {
+    "image": "/images/dennis-landwehr-aktiv.jpeg",
+    "imageAlt": "Dennis Landwehr beim Hannover Marathon vor dem MLP-Büro",
+    "title": "Engagement über die Beratung hinaus",
+    "text": "Finanzielle Stabilität entsteht nicht über Nacht – sie braucht eine langfristige Perspektive. Das gilt für die Beratung genauso wie im Sport: Ausdauer, Planung und Konsequenz führen zum Ziel.\n\nAls Läufer beim Hannover Marathon weiß ich, was es bedeutet, sich Ziele zu setzen und konsequent daran zu arbeiten. Dieses Denken bringe ich in jede Beratung ein."
+  },
+  "text": "Finanzielle Entscheidungen im medizinischen Berufsleben sind selten isoliert. Krankenversicherung, Berufshaftpflicht, Arbeitskraft, Versorgungswerk, Vermögensaufbau und eine mögliche Niederlassung greifen ineinander.\n\nAls Finanzberater bei MLP unterstütze ich Human- und Zahnmediziner dabei, diese Themen verständlich zu ordnen und fundierte Entscheidungen zu treffen. Im Mittelpunkt stehen deine aktuelle Situation, deine Ziele und ein Konzept, das auch bei beruflichen Veränderungen weiter tragfähig bleibt.\n\nIch begleite Medizinstudierende, Ärztinnen, Ärzte, Zahnärztinnen und Zahnärzte persönlich – in Hannover und digital. Das erste Gespräch dient dem Kennenlernen und der Einordnung: Wo stehst du, was ist relevant, was hat Priorität?"
+}

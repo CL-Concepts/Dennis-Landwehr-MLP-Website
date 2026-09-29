@@ -1,0 +1,71 @@
+{
+  "order": 3,
+  "seoTitle": "Rechtliche Hinweise",
+  "seoDescription": "Rechtliche Hinweise der persönlichen Beraterwebsite von {{name}}.",
+  "breadcrumb": "Rechtliche Hinweise",
+  "title": "Rechtliche Hinweise",
+  "warningTitle": "⚠️ Platzhalter",
+  "warningText": "⚠️ PLATZHALTER – Rechtliche Hinweise müssen vor Veröffentlichung durch einen auf Finanzdienstleistungen spezialisierten Rechtsanwalt sowie durch die MLP-Compliance-Abteilung freigegeben werden.",
+  "sections": [
+    {
+      "heading": "Allgemeiner Hinweis",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "{{hinweis-allgemein}}"
+        }
+      ]
+    },
+    {
+      "heading": "Persönliche Beraterwebsite",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "{{hinweis-beraterwebsite}}"
+        }
+      ]
+    },
+    {
+      "heading": "Zulassung und Aufsicht",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "[Platzhalter: Angaben zu Zulassung, Registrierung und zuständiger Aufsichtsbehörde für Finanzberatungsleistungen – vor Veröffentlichung durch MLP-Compliance und Rechtsberatung prüfen lassen]"
+        }
+      ]
+    },
+    {
+      "heading": "Interessenkonflikte",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "[Platzhalter: Angaben zu möglichen Interessenkonflikten und Vergütungsstrukturen – vor Veröffentlichung prüfen lassen]"
+        }
+      ]
+    },
+    {
+      "heading": "Anlageberatung",
+      "style": "normal",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "[Platzhalter: Hinweise zu den erbrachten Dienstleistungen und deren rechtlicher Einordnung – vor Veröffentlichung durch Rechtsberatung prüfen lassen]"
+        }
+      ]
+    },
+    {
+      "heading": "",
+      "style": "fussnote",
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Stand: Diese Seite ist ein Platzhalter und noch nicht rechtlich geprüft. Eine Nutzung der Website zur Veröffentlichung setzt die vollständige Freigabe aller Rechtstexte voraus. Bitte wenden Sie sich für Fragen an {{email}}."
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { legalTexts } from "@/content/legal";
+import { settings } from "@/lib/content";
 
 type LegalNoticeProps = {
   compact?: boolean;
@@ -16,7 +17,7 @@ export default function LegalNotice({ compact = false }: LegalNoticeProps) {
       aria-label="Rechtlicher Hinweis"
       className="bg-surface border border-border rounded-lg p-4 md:p-6"
     >
-      <p className="text-sm font-semibold text-navy mb-2">Rechtlicher Hinweis</p>
+      <p className="text-sm font-semibold text-navy mb-2">{settings.legal.noticeTitle}</p>
       <p className="text-sm text-muted leading-relaxed">{legalTexts.disclaimer}</p>
     </aside>
   );

@@ -1,13 +1,13 @@
-import { siteConfig } from "@/config/site";
+import { fill, settings } from "@/lib/content";
+import impressum from "../../content/rechtliches/impressum.json";
+import datenschutz from "../../content/rechtliches/datenschutz.json";
+import hinweise from "../../content/rechtliches/rechtliche-hinweise.json";
 
+/** Rechtliche Hinweistexte – gepflegt im CMS (Einstellungen bzw. Rechtstexte). */
 export const legalTexts = {
-  disclaimer: `Die Inhalte dieser Website dienen ausschließlich der allgemeinen Information und stellen keine individuelle Anlage-, Versicherungs-, Rechts- oder Steuerberatung dar. Ob eine Lösung für Ihre Situation geeignet ist, kann nur unter Berücksichtigung Ihrer persönlichen Umstände geprüft werden.`,
-
-  personalSite: `Persönliche Beraterwebsite von ${siteConfig.name}. Diese Website ist kein offizieller Unternehmensauftritt der MLP Finanzberatung SE.`,
-
-  imprintPlaceholder: `⚠️ PLATZHALTER – Noch nicht juristisch geprüft. Vor Veröffentlichung ist eine anwaltliche Prüfung und die Compliance-Freigabe durch MLP erforderlich.`,
-
-  privacyPlaceholder: `⚠️ PLATZHALTER – Datenschutzerklärung muss vor Veröffentlichung juristisch geprüft werden. Sie muss alle verwendeten Technologien, Dienste und Verarbeitungszwecke vollständig abbilden.`,
-
-  legalNotesPlaceholder: `⚠️ PLATZHALTER – Rechtliche Hinweise müssen vor Veröffentlichung durch einen auf Finanzdienstleistungen spezialisierten Rechtsanwalt sowie durch die MLP-Compliance-Abteilung freigegeben werden.`,
+  disclaimer: settings.legal.disclaimer,
+  personalSite: fill(settings.legal.personalSite),
+  imprintPlaceholder: impressum.warningText,
+  privacyPlaceholder: datenschutz.warningText,
+  legalNotesPlaceholder: hinweise.warningText,
 };

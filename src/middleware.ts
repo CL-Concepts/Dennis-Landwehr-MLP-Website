@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 
 /**
  * WARTUNGSMODUS – vorübergehende Deaktivierung der Website.
@@ -10,7 +10,14 @@ import { NextResponse } from "next/server";
  *
  * WIEDER AKTIVIEREN: einfach diese Datei (src/middleware.ts) löschen und
  * die Änderung nach GitHub pushen – Vercel deployt automatisch und die
- * Seite ist sofort wieder normal erreichbar.
+ * Seite ist sofort wieder normal erreichbar. *
+ * AUSNAHMEN (freigegeben am 25.09.2026):
+ *  - Vorschau-Deployments und lokale Entwicklung (nicht Production und nicht
+ *    über die echte Domain aufgerufen) – damit Änderungen geprüft werden können.
+ *  - Der Tina-Editor unter /admin – damit Dennis Inhalte pflegen kann.
+ *  - Die Seitenvorschau im Tina-Editor: Die erste Anfrage aus dem Editor-Rahmen
+ *    setzt ein Vorschau-Cookie, damit auch Bilder und Unterseiten der Vorschau
+ *    geladen werden. Das Cookie ist rein technisch und nur für Bearbeitende.
  */
 
 const maintenanceHtml = `<!doctype html>
@@ -112,7 +119,55 @@ const maintenanceHtml = `<!doctype html>
 </body>
 </html>`;
 
-export function middleware() {
+const PRODUCTION_HOST = /(^|\.)dennis-landwehr\.com$/;
+const PREVIEW_COOKIE = "tina-vorschau";
+
+/** Aufgerufener Host ohne Port – bei Vercel die tatsächlich aufgerufene Domain. */
+function requestHost(request: NextRequest): string {
+  return (request.headers.get("host") || request.nextUrl.hostname).replace(/:\d+$/, "");
+}
+
+function parseUrl(value: string): URL | null {
+  try {
+    return new URL(value);
+  } catch {
+    return null;
+  }
+}
+
+/** Wartungsmodus gilt für Production und für jeden Aufruf über die echte Domain. */
+function isLiveSite(request: NextRequest): boolean {
+  return process.env.VERCEL_ENV === "production" || PRODUCTION_HOST.test(requestHost(request));
+}
+
+/** Die Seite wird im Vorschau-Rahmen des Tina-Editors derselben Domain geladen. */
+function isEditorFrame(request: NextRequest): boolean {
+  const referer = parseUrl(request.headers.get("referer") || "");
+  return (
+    request.headers.get("sec-fetch-dest") === "iframe" &&
+    referer !== null &&
+    referer.hostname === requestHost(request) &&
+    referer.pathname.startsWith("/admin")
+  );
+}
+
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  if (!isLiveSite(request)) return NextResponse.next();
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) return NextResponse.next();
+  if (request.cookies.get(PREVIEW_COOKIE)?.value === "1") return NextResponse.next();
+  if (isEditorFrame(request)) {
+    const response = NextResponse.next();
+    response.cookies.set(PREVIEW_COOKIE, "1", {
+      httpOnly: true,
+      secure: true,
+      sameSite: "strict",
+      path: "/",
+    });
+    return response;
+  }
+
   return new NextResponse(maintenanceHtml, {
     status: 503,
     headers: {

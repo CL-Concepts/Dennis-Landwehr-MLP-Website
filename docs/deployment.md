@@ -38,12 +38,21 @@ den Commit → _Revert Changes in Commit_ → als Pull Request mergen. So bleibt
 
 ## Wartungsmodus
 
-Zustand seit 21.07.2026: **aktiv** (alle Seiten liefern eine Wartungsseite mit Status 503).
+Zustand seit 21.07.2026: **aktiv**. Die echte Domain (und Production allgemein) liefert eine
+Wartungsseite mit Status 503.
+
+**Ausnahmen** (seit 25.09.2026): Vorschau-Deployments, lokale Entwicklung, der Editor `/admin` und
+die Seitenvorschau im Editor. Abgesichert durch `src/__tests__/middleware.test.ts`.
 
 - **Aus:** `src/middleware.ts` in einem Branch löschen → Pull Request → Merge.
-- **An:** die Datei aus dem Commit `608cc26` wiederherstellen (`git checkout 608cc26 -- src/middleware.ts`).
+- **An:** die Datei aus der Git-Historie wiederherstellen.
 
 Längerer Wartungsmodus (Wochen) schadet dem Google-Ranking; 503 ist nur für kurze Auszeiten gedacht.
+
+## Tina Cloud (Voraussetzung für jeden Build)
+
+`npm run build` braucht die Tina-Zugangsdaten (siehe `docs/environments.md`). Fehlen sie, schlägt der
+Vercel-Build fehl – die bisherige Version bleibt online. Einrichtung: `docs/tina.md`.
 
 ## Domain & SSL
 

@@ -1,0 +1,142 @@
+{
+  "order": 2,
+  "title": "Krankenversicherung für Mediziner",
+  "shortText": "Gesetzlich oder privat ist keine pauschale Entscheidung. Entscheidend sind berufliche Situation, Leistungswünsche, langfristige Beitragsentwicklung und persönliche Lebensplanung.",
+  "highlights": [
+    "GKV und PKV vergleichen",
+    "Optionen für Studierende und Berufseinsteiger",
+    "Krankentagegeld mitdenken",
+    "Langfristige Versorgung planen"
+  ],
+  "ctaText": "Krankenversicherung prüfen",
+  "icon": "heart",
+  "seoTitle": "Krankenversicherung für Mediziner in {{stadt}}",
+  "seoDescription": "GKV oder PKV für Ärzte und Zahnärzte? Individuelle Beratung zur Krankenversicherungswahl, Krankentagegeld und langfristiger Versorgung – für Studierende bis Praxisinhaber.",
+  "breadcrumb": "Krankenversicherung",
+  "h1": "Krankenversicherung für Ärzte und Zahnärzte",
+  "summary": "GKV oder PKV ist keine pauschale Entscheidung – sie hängt von Berufsstatus, Einkommen, Leistungserwartungen und Lebensplanung ab. Für Medizinerinnen und Mediziner kommen in jeder Karrierephase unterschiedliche Überlegungen hinzu.",
+  "updatedAt": "2025-06-01",
+  "atAGlance": [
+    {
+      "label": "Für wen relevant",
+      "value": "Studierende, Angestellte, Niedergelassene"
+    },
+    {
+      "label": "Wann prüfen",
+      "value": "Studienende, Anstellungswechsel, Niederlassung"
+    },
+    {
+      "label": "Themen im Gespräch",
+      "value": "GKV/PKV, Leistungen, Familienplanung, Krankentagegeld"
+    },
+    {
+      "label": "Nächster Schritt",
+      "value": "Persönliches Gespräch"
+    }
+  ],
+  "sections": [
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "In Deutschland besteht für die meisten Arbeitnehmer zunächst Pflicht zur gesetzlichen Krankenversicherung (GKV). Wer über der sogenannten Jahresarbeitsentgeltgrenze verdient, kann sich alternativ privat versichern (PKV). Selbstständige – darunter niedergelassene Ärztinnen und Ärzte – können von Anfang an frei wählen."
+        },
+        {
+          "_template": "absatz",
+          "text": "Beide Systeme haben eigene Logiken, Stärken und Schwächen. Die Entscheidung sollte nicht allein am kurzfristigen Beitrag ausgerichtet sein, sondern auch die langfristige Beitragsentwicklung, Familienplanung und berufliche Perspektiven berücksichtigen."
+        }
+      ],
+      "heading": "GKV und PKV – Grundlagen"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Für Studierende stellen sich typischerweise folgende Fragen:"
+        },
+        {
+          "_template": "liste",
+          "punkte": [
+            "Bis wann greift die Familienversicherung über die Eltern?",
+            "Was gilt bei eigenem Einkommen durch Nebenjobs oder Stipendien?",
+            "Gibt es Optionstarife, die einen späteren Wechsel ermöglichen?",
+            "Wie entwickeln sich die Beiträge nach dem Studium?"
+          ]
+        }
+      ],
+      "heading": "Für Studierende der Medizin und Zahnmedizin"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Mit dem Berufseinstieg entstehen neue Entscheidungspunkte. Relevant sind unter anderem:"
+        },
+        {
+          "_template": "liste",
+          "punkte": [
+            "Überschreiten der Jahresarbeitsentgeltgrenze und Optionen danach",
+            "Leistungsunterschiede zwischen GKV und PKV (z. B. ambulante Versorgung, Wahlarzt)",
+            "Krankentagegeld als Ergänzung – für Angestellte und erst recht für Selbstständige",
+            "Familienplanung und Versicherung von Partnern und Kindern",
+            "Langfristige Beitragsentwicklung im Alter"
+          ]
+        }
+      ],
+      "heading": "Für angestellte Ärztinnen und Zahnärzte"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Niedergelassene Ärztinnen, Ärzte, Zahnärztinnen und Zahnärzte sind nicht versicherungspflichtig und treffen die Wahl zwischen GKV und PKV in vollem Umfang eigenverantwortlich. Neben dem Leistungsumfang ist das Krankentagegeld ein besonders wichtiges Thema: Bei längerer Erkrankung laufen Praxiskosten weiter, während kein Einkommen fließt. Wie hoch das Krankentagegeld bemessen sein sollte, ergibt sich aus den individuellen Betriebskosten und dem Privatbedarf."
+        }
+      ],
+      "heading": "Für Praxisinhaber und Niedergelassene"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Die Krankenversicherungsentscheidung sollte nicht allein auf den aktuellen Monatsbeitrag reduziert werden. Wichtige Faktoren für eine fundierte Betrachtung sind die Beitragsentwicklung im Alter, die Familienplanung, mögliche Wechseloptionen und die persönliche Gesundheitssituation. Eine sachliche Einschätzung erfordert Zeit und individuelle Zahlen – das ist Gegenstand des persönlichen Beratungsgesprächs."
+        }
+      ],
+      "heading": "Langfristige Perspektive statt kurzfristiger Vergleich"
+    }
+  ],
+  "calculator": "keiner",
+  "faqs": [
+    {
+      "id": "kv-faq-wahl",
+      "question": "Ab wann kann ich als Ärztin in die PKV wechseln?",
+      "answer": "Als angestellte Ärztin besteht grundsätzlich Versicherungspflicht in der GKV, sofern das Einkommen die gesetzliche Jahresarbeitsentgeltgrenze nicht überschreitet. Bei Überschreitung dieser Grenze besteht die Möglichkeit, sich von der Versicherungspflicht befreien zu lassen und in die PKV zu wechseln. Selbstständig tätige und niedergelassene Ärztinnen und Ärzte sind von der Versicherungspflicht ausgenommen und können frei wählen. Die aktuellen Grenzwerte ändern sich jährlich – bitte individuell prüfen.",
+      "category": "aerzte"
+    },
+    {
+      "id": "kv-faq-studierende",
+      "question": "Welche Krankenversicherung gilt im Medizinstudium?",
+      "answer": "Studierende sind bis zum vollendeten 25. Lebensjahr in der Regel über die Eltern familienversichert, sofern kein eigenes Einkommen über einer bestimmten Grenze vorliegt. Danach oder bei eigenem Einkommen ist eine studentische Pflichtversicherung in der GKV möglich. Für bestimmte Gruppen gibt es auch die Option der privaten Krankenversicherung als Studierender, die bei einem späteren Wechsel jedoch langfristig betrachtet werden sollte.",
+      "category": "studierende"
+    },
+    {
+      "id": "kv-faq-krankentagegeld",
+      "question": "Warum ist Krankentagegeld für Selbstständige wichtig?",
+      "answer": "Bei Angestellten übernimmt der Arbeitgeber in der Regel die Fortzahlung des Gehalts für eine bestimmte Zeit. Niedergelassene Ärztinnen und Ärzte sowie Zahnärztinnen und Zahnärzte erhalten hingegen kein Gehalt, wenn sie länger erkranken – laufende Praxiskosten fallen jedoch weiter an. Ein bedarfsgerecht bemessenes Krankentagegeld kann diese Lücke schließen.",
+      "category": "praxis"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Berufsunfähigkeit",
+      "href": "/leistungen/berufsunfaehigkeit-mediziner"
+    },
+    {
+      "label": "Berufshaftpflicht",
+      "href": "/leistungen/berufshaftpflicht-mediziner"
+    },
+    {
+      "label": "Vermögensaufbau",
+      "href": "/leistungen/vermoegensaufbau-mediziner"
+    }
+  ]
+}

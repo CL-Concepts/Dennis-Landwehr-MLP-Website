@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
 import { buildBreadcrumbSchema } from "@/lib/schema";
+import { settings } from "@/lib/content";
 
 type BreadcrumbItem = {
   name: string;
@@ -12,7 +13,7 @@ type BreadcrumbsProps = {
 };
 
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
-  const allItems = [{ name: "Startseite", href: "/" }, ...items];
+  const allItems = [{ name: settings.breadcrumbHome, href: "/" }, ...items];
 
   return (
     <>

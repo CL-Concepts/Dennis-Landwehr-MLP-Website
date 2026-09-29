@@ -2,48 +2,29 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { buildMetadata } from "@/lib/metadata";
 import { buildFaqSchema } from "@/lib/schema";
-import { homepageFaqs } from "@/content/faqs";
+import { fill, type StartseiteContent } from "@/lib/content";
+import { getStartseite } from "@/lib/tina";
+import { toFaqs } from "@/lib/faq";
 import JsonLd from "@/components/seo/JsonLd";
-import Hero from "@/components/sections/Hero";
-import AudienceSelector from "@/components/sections/AudienceSelector";
-import ServicesOverview from "@/components/sections/ServicesOverview";
-import FinanceCalculators from "@/components/sections/FinanceCalculators";
-import CareerTimeline from "@/components/sections/CareerTimeline";
-import AdvisorProfile from "@/components/sections/AdvisorProfile";
-import ConsultingProcess from "@/components/sections/ConsultingProcess";
-import FAQ from "@/components/sections/FAQ";
-import FinalCta from "@/components/sections/FinalCta";
-import LegalNotice from "@/components/ui/LegalNotice";
-import Reveal from "@/components/ui/Reveal";
+import HomeView from "@/components/views/HomeView";
 
-export const metadata: Metadata = buildMetadata({
-  title: `Finanzberatung für Ärzte und Zahnärzte in ${siteConfig.city}`,
-  description: siteConfig.description,
-  canonical: "/",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { data } = await getStartseite();
+  const page = data.startseite as unknown as StartseiteContent;
+  return buildMetadata({
+    title: fill(page.seoTitle),
+    description: fill(page.seoDescription) || siteConfig.description,
+    canonical: "/",
+  });
+}
 
-export default function HomePage() {
+export default async function HomePage() {
+  const result = await getStartseite();
+  const page = result.data.startseite as unknown as StartseiteContent;
   return (
     <>
-      <JsonLd data={buildFaqSchema(homepageFaqs)} />
-      <Hero />
-      <AudienceSelector />
-      <Reveal>
-        <ServicesOverview />
-      </Reveal>
-      <FinanceCalculators />
-      <CareerTimeline />
-      <Reveal>
-        <AdvisorProfile />
-      </Reveal>
-      <Reveal>
-        <ConsultingProcess />
-      </Reveal>
-      <FAQ faqs={homepageFaqs} title="Häufige Fragen zur Finanzberatung für Mediziner" />
-      <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <LegalNotice />
-      </div>
-      <FinalCta />
+      <JsonLd data={buildFaqSchema(toFaqs(page.faq.items, "faq-start"))} />
+      <HomeView {...result} />
     </>
   );
 }

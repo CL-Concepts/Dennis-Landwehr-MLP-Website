@@ -2,10 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { careerPhases } from "@/config/services";
+import { fill, type StartseiteContent } from "@/lib/content";
 import SectionHeading from "@/components/ui/SectionHeading";
 
-export default function CareerTimeline() {
+type CareerTimelineProps = { data: StartseiteContent["career"] };
+
+export default function CareerTimeline({ data }: CareerTimelineProps) {
+  const careerPhases = data.phases;
   const [activeIndex, setActiveIndex] = useState(0);
   const activePhase = careerPhases[activeIndex];
   const progress = (activeIndex / (careerPhases.length - 1)) * 100;
@@ -16,9 +19,9 @@ export default function CareerTimeline() {
         <SectionHeading
           id="timeline-heading"
           as="h2"
-          eyebrow="Von Studium bis Ruhestand"
-          title="Finanzplanung, die mit deiner Karriere mitwächst"
-          subtitle="Tippe auf eine Karrierephase und sieh, welche Finanzthemen dann im Mittelpunkt stehen."
+          eyebrow={data.eyebrow}
+          title={data.title}
+          subtitle={data.subtitle}
           className="mb-12"
         />
 
@@ -111,7 +114,7 @@ export default function CareerTimeline() {
         >
           <div key={activePhase.id} className="animate-fade-up">
             <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">
-              Phase {activeIndex + 1} von {careerPhases.length}
+              {fill(data.phaseLabel, { nr: activeIndex + 1, gesamt: careerPhases.length })}
             </p>
             <h3 className="text-2xl md:text-3xl font-bold text-navy mb-3">
               {activePhase.label.replace("­", "")}
@@ -158,7 +161,7 @@ export default function CareerTimeline() {
                   onClick={() => setActiveIndex(activeIndex + 1)}
                   className="inline-flex items-center justify-center gap-1 text-sm font-semibold text-primary hover:text-primary-hover transition-colors min-h-[44px] px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus rounded"
                 >
-                  Nächste Phase ansehen
+                  {data.nextButton}
                   <svg
                     className="w-4 h-4"
                     viewBox="0 0 24 24"

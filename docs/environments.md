@@ -2,28 +2,27 @@
 
 ## Umgebungen
 
-| Umgebung          | Wo                            | Adresse                               |
-| ----------------- | ----------------------------- | ------------------------------------- |
-| Local             | eigener Mac, `npm run dev`    | http://localhost:3000                 |
-| Preview (Staging) | Vercel, automatisch je Branch | `…vercel.app` (steht im Pull Request) |
-| Production        | Vercel, Branch `main`         | https://dennis-landwehr.com           |
+| Umgebung   | Wo                         | Adresse                                   | Wartungsmodus                               |
+| ---------- | -------------------------- | ----------------------------------------- | ------------------------------------------- |
+| Local      | eigener Mac, `npm run dev` | http://localhost:3000 (`/admin` = Editor) | aus                                         |
+| Preview    | Vercel, je Branch          | `…vercel.app` (steht im Pull Request)     | aus                                         |
+| Production | Vercel, `main`             | https://dennis-landwehr.com               | **an** (außer `/admin` und Editor-Vorschau) |
 
-## Umgebungsvariablen
+## Variablen
 
-Das Projekt benötigt **derzeit keine**. Alle Einstellungen stehen öffentlich unbedenklich in
-`src/config/site.ts`.
+| Name                         | Zweck                                 | Local     | Preview      | Production | öffentlich/geheim | eintragen in                              |
+| ---------------------------- | ------------------------------------- | --------- | ------------ | ---------- | ----------------- | ----------------------------------------- |
+| `NEXT_PUBLIC_TINA_CLIENT_ID` | ID des Tina-Cloud-Projekts            | optional¹ | ja           | ja         | öffentlich        | Vercel → Settings → Environment Variables |
+| `TINA_TOKEN`                 | Read-Only-Token zum Lesen der Inhalte | optional¹ | ja           | ja         | **geheim**        | Vercel (nie ins Git)                      |
+| `NEXT_PUBLIC_TINA_BRANCH`    | aus welchem Git-Branch Tina liest     | –         | leer lassen² | `main`     | öffentlich        | Vercel                                    |
 
-Kommen später welche dazu (z. B. Analytics), gilt:
+¹ Lokal läuft Tina ohne Cloud gegen die Dateien in `content/`.
+² Ohne Wert nimmt `tina/config.ts` bei Vercel automatisch den Branch des Deployments.
 
-| Frage                        | Regel                                                                         |
-| ---------------------------- | ----------------------------------------------------------------------------- |
-| Wo steht die Liste?          | `.env.example` (ohne echte Werte, mit Kommentar) + Tabelle hier               |
-| Wo stehen echte Werte lokal? | `.env.local` – wird nie committet                                             |
-| Wo stehen echte Werte live?  | Vercel → _Settings → Environment Variables_, getrennt nach Production/Preview |
-| Öffentlich oder geheim?      | Nur Variablen mit `NEXT_PUBLIC_` landen im Browser – dort **nie** Secrets     |
+Von Vercel automatisch gesetzt und im Code genutzt: `VERCEL_ENV` (Wartungsmodus: nur bei
+`production` aktiv, zusätzlich immer über die echte Domain).
 
-Vorlage für neue Einträge:
+Herkunft der Tina-Werte: app.tina.io → Projekt → _Overview / Tokens_. Vorlage: `.env.example`.
 
-| Name | Zweck | Local | Preview | Production | öffentlich/geheim | eintragen in |
-| ---- | ----- | ----- | ------- | ---------- | ----------------- | ------------ |
-| –    | –     | –     | –       | –          | –                 | –            |
+> **Wichtig:** Ohne diese Variablen schlägt jeder Vercel-Build fehl (auch Vorschauen), weil
+> `npm run build` Tina Cloud braucht. Die bisherige Version bleibt dann online.

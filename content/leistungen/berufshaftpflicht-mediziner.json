@@ -1,0 +1,152 @@
+{
+  "order": 1,
+  "title": "Berufshaftpflicht für Mediziner",
+  "shortText": "Berufliche Verantwortung braucht einen Schutz, der zur konkreten Tätigkeit passt. Gemeinsam prüfen wir, welche Risiken in Studium, Anstellung, Nebentätigkeit oder eigener Praxis berücksichtigt werden müssen.",
+  "highlights": [
+    "Famulatur und Praktisches Jahr",
+    "Angestellte Tätigkeit und Nebentätigkeiten",
+    "Human- und Zahnmedizin",
+    "Praxis und Mitarbeitende"
+  ],
+  "ctaText": "Berufshaftpflicht ansehen",
+  "icon": "shield",
+  "seoTitle": "Berufshaftpflicht für Ärzte und Zahnärzte",
+  "seoDescription": "Berufshaftpflicht für Humanmediziner und Zahnmediziner: Was in Studium, Anstellung und eigener Praxis zu berücksichtigen ist – sachliche Informationen und individuelle Beratung.",
+  "breadcrumb": "Berufshaftpflicht",
+  "h1": "Berufshaftpflicht für Ärzte und Zahnärzte",
+  "summary": "Die Berufshaftpflicht schützt vor finanziellen Folgen bei Behandlungsfehlern und beruflichen Versäumnissen. Ob und welcher Schutz notwendig ist, hängt von der konkreten Tätigkeit ab – im Studium, in der Anstellung oder in der eigenen Praxis.",
+  "updatedAt": "2025-06-01",
+  "atAGlance": [
+    {
+      "label": "Für wen relevant",
+      "value": "Studierende, Angestellte, Praxisinhaber"
+    },
+    {
+      "label": "Wann prüfen",
+      "value": "Vor Famulatur, PJ, Anstellung und Praxisgründung"
+    },
+    {
+      "label": "Themen im Gespräch",
+      "value": "Tätigkeit, Umfang, Nebentätigkeiten, Mitarbeitende"
+    },
+    {
+      "label": "Nächster Schritt",
+      "value": "Persönliches Gespräch"
+    }
+  ],
+  "sections": [
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Die Berufshaftpflichtversicherung sichert Ärztinnen und Ärzte sowie Zahnärztinnen und Zahnärzte gegen Schadensersatzansprüche ab, die aus ihrer beruflichen Tätigkeit entstehen. Dazu gehören etwa Behandlungsfehler, Fehler bei der Aufklärung oder fehlerhafte Dokumentation. Ohne ausreichende Absicherung können Forderungen existenzbedrohend sein."
+        }
+      ],
+      "heading": "Was ist Berufshaftpflicht?"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Im Pflichtrahmen des Studiums – bei Pflichtfamulaturen und im Praktischen Jahr an anerkannten Lehrkrankenhäusern – besteht in der Regel ein institutioneller Versicherungsschutz. Dieser Schutz gilt jedoch nicht automatisch für alle Situationen:"
+        },
+        {
+          "_template": "liste",
+          "punkte": [
+            "Freiwillige Famulaturen außerhalb der Pflichtblöcke",
+            "Auslandsaufenthalte und internationale Rotationen",
+            "Praktika in Einrichtungen ohne eigene Absicherung",
+            "Tätigkeiten außerhalb des offiziellen Rahmens"
+          ]
+        },
+        {
+          "_template": "absatz",
+          "text": "Vor einem Auslandsaufenthalt oder einer freiwilligen Famulatur empfiehlt es sich, den bestehenden Schutz zu prüfen und bei Bedarf zu ergänzen."
+        }
+      ],
+      "heading": "Für Studierende: Famulatur und PJ"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "In einer festen Anstellung – etwa in einer Klinik oder einem medizinischen Versorgungszentrum – übernimmt der Arbeitgeber die Berufshaftpflicht für dienstlich angeordnete Tätigkeiten. Zu klären ist jedoch:"
+        },
+        {
+          "_template": "liste",
+          "punkte": [
+            "Umfang und Deckungshöhe der arbeitgeberseitigen Versicherung",
+            "Absicherung bei Nebentätigkeiten und Honorartätigkeiten",
+            "Schutz bei Vertretungen in anderen Einrichtungen",
+            "Bereitschaftsdienste außerhalb des Hauptarbeitsverhältnisses",
+            "Eigene Haftung im Verhältnis zu Patientinnen und Patienten"
+          ]
+        }
+      ],
+      "heading": "Für angestellte Ärztinnen und Ärzte"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "In der eigenen Praxis trägst du nicht nur Verantwortung für deine eigene Tätigkeit, sondern auch für die deiner angestellten Mitarbeitenden. Relevante Punkte im Gespräch sind:"
+        },
+        {
+          "_template": "liste",
+          "punkte": [
+            "Fachrichtung und spezifische Tätigkeiten (z. B. operative Eingriffe)",
+            "Anzahl und Qualifikation der Mitarbeitenden",
+            "Betriebsstätten und Außeneinsätze",
+            "Trennung von privater und betrieblicher Haftung",
+            "Praxisgemeinschaften und Berufsausübungsgemeinschaften"
+          ]
+        }
+      ],
+      "heading": "Für Praxisinhaber und Niedergelassene"
+    },
+    {
+      "bausteine": [
+        {
+          "_template": "absatz",
+          "text": "Human- und Zahnmedizin unterscheiden sich in Tätigkeitsprofil und Risikobild. Für Zahnärztinnen und Zahnärzte sind unter anderem prothesenprothetische, chirurgische und implantologische Eingriffe relevant. Für Humanmediziner variieren die Anforderungen stark nach Fachrichtung. Die konkret benötigte Absicherung ergibt sich aus der tatsächlichen Tätigkeit – pauschale Aussagen sind hier nicht sinnvoll."
+        }
+      ],
+      "heading": "Human- und Zahnmedizin im Vergleich"
+    }
+  ],
+  "calculator": "keiner",
+  "faqs": [
+    {
+      "id": "bh-faq-studium",
+      "question": "Bin ich im Studium automatisch berufshaftpflichtversichert?",
+      "answer": "Während regulärer Pflichtveranstaltungen und Pflichtfamulaturen sind Studierende in der Regel über die Universität oder das Lehrkrankenhaus versichert. Für freiwillige Famulaturen, Auslandsaufenthalte oder eigenständige Tätigkeiten außerhalb dieser Rahmenbedingungen kann die Absicherung unzureichend sein. Es empfiehlt sich, die konkrete Situation im Vorfeld zu prüfen.",
+      "category": "studierende"
+    },
+    {
+      "id": "bh-faq-angestellt",
+      "question": "Brauche ich als angestellte Ärztin eine eigene Berufshaftpflicht?",
+      "answer": "In einer Anstellung sind Ärztinnen und Ärzte in der Regel über die Haftpflichtversicherung des Arbeitgebers abgedeckt. Aber: Nebentätigkeiten, Vertretungen in anderen Einrichtungen oder Bereitschaftsdienste außerhalb des Hauptarbeitsverhältnisses können eine eigene Absicherung erfordern. Es lohnt sich, den genauen Umfang der arbeitgeberseitigen Versicherung zu kennen.",
+      "category": "aerzte"
+    },
+    {
+      "id": "bh-faq-praxis",
+      "question": "Was ist bei der eigenen Praxis zu beachten?",
+      "answer": "Praxisinhaber tragen berufliche Risiken sowohl für die eigene Tätigkeit als auch für die ihrer angestellten Mitarbeitenden. Die benötigte Deckung hängt von Fachrichtung, Praxisform, Mitarbeitendenanzahl und spezifischen Tätigkeiten ab. Private und betriebliche Haftung sind dabei sauber voneinander zu trennen.",
+      "category": "praxis"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Krankenversicherung",
+      "href": "/leistungen/krankenversicherung-mediziner"
+    },
+    {
+      "label": "Berufsunfähigkeit",
+      "href": "/leistungen/berufsunfaehigkeit-mediziner"
+    },
+    {
+      "label": "Für Studierende",
+      "href": "/studierende"
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+fragment EinstellungenParts on Einstellungen {
+  __typename
+  name
+  professionalTitle
+  specialization
+  city
+  region
+  phone
+  phoneFormatted
+  email
+  address {
+    __typename
+    street
+    zip
+    city
+    country
+    full
+  }
+  bookingUrl
+  mlpProfileUrl
+  description
+  navigation {
+    __typename
+    label
+    href
+    children {
+      __typename
+      label
+      href
+    }
+  }
+  buttons {
+    __typename
+    header
+    mobile
+    serviceCard
+  }
+  breadcrumbHome
+  footer {
+    __typename
+    bookingButton
+    contactTitle
+    mlpLinkText
+    legalTitle
+    legalLinks {
+      __typename
+      label
+      href
+    }
+    copyright
+  }
+  legal {
+    __typename
+    noticeTitle
+    disclaimer
+    personalSite
+  }
+  finalCta {
+    __typename
+    title
+    text
+    button
+    note
+  }
+  servicePage {
+    __typename
+    breadcrumbParent
+    atAGlanceTitle
+    bookingButton
+    contactLink
+    authorPrefix
+    authorName
+    authorSuffix
+    updatedPrefix
+    relatedTitle
+    faqTitle
+  }
+  notFound {
+    __typename
+    code
+    title
+    text
+    homeButton
+    bookingButton
+  }
+}
+
+fragment StartseiteParts on Startseite {
+  __typename
+  seoTitle
+  seoDescription
+  hero {
+    __typename
+    eyebrow
+    title
+    lead
+    text
+    primaryButton
+    secondaryButton
+    trustItems
+    image
+    imageAlt
+    badgeStatus
+    badgeTitle
+    badgeText
+  }
+  audiences {
+    __typename
+    title
+    subtitle
+    cards {
+      __typename
+      title
+      description
+      ctaText
+      href
+      image
+      imageAlt
+      icon
+    }
+  }
+  services {
+    __typename
+    title
+    subtitle
+  }
+  career {
+    __typename
+    eyebrow
+    title
+    subtitle
+    phaseLabel
+    nextButton
+    phases {
+      __typename
+      label
+      description
+      detail
+      topics
+      hrefLabel
+      href
+      id
+    }
+  }
+  profile {
+    __typename
+    title
+    text
+    image
+    imageAlt
+    primaryButton
+    secondaryButton
+    mlpPrefix
+    mlpLinkText
+  }
+  process {
+    __typename
+    title
+    steps {
+      __typename
+      number
+      title
+      description
+    }
+  }
+  faq {
+    __typename
+    title
+    items {
+      __typename
+      question
+      answer
+      id
+      category
+    }
+  }
+}
+
+fragment LeistungsuebersichtParts on Leistungsuebersicht {
+  __typename
+  seoTitle
+  seoDescription
+  breadcrumb
+  title
+  subtitle
+  phasesTitle
+  phases {
+    __typename
+    title
+    text
+    linkText
+    linkHref
+  }
+}
+
+fragment LeistungParts on Leistung {
+  __typename
+  order
+  title
+  shortText
+  highlights
+  ctaText
+  icon
+  seoTitle
+  seoDescription
+  breadcrumb
+  h1
+  summary
+  updatedAt
+  atAGlance {
+    __typename
+    label
+    value
+  }
+  sections {
+    __typename
+    heading
+    bausteine {
+      __typename
+      ... on LeistungSectionsBausteineAbsatz {
+        text
+      }
+      ... on LeistungSectionsBausteineListe {
+        punkte
+      }
+      ... on LeistungSectionsBausteineKarten {
+        karten {
+          __typename
+          titel
+          text
+        }
+      }
+      ... on LeistungSectionsBausteineNotiz {
+        text
+      }
+      ... on LeistungSectionsBausteineHinweis {
+        label
+        text
+      }
+    }
+  }
+  calculator
+  faqs {
+    __typename
+    question
+    answer
+    id
+    category
+  }
+  relatedLinks {
+    __typename
+    label
+    href
+  }
+}
+
+fragment StudierendeParts on Studierende {
+  __typename
+  seoTitle
+  seoDescription
+  breadcrumb
+  hero {
+    __typename
+    eyebrow
+    title
+    text
+    primaryButton
+    secondaryButton
+    image
+    imageAlt
+  }
+  notice {
+    __typename
+    label
+    text
+  }
+  topics {
+    __typename
+    title
+    subtitle
+    linkText
+    items {
+      __typename
+      title
+      description
+      href
+    }
+  }
+  program {
+    __typename
+    title
+    text
+    items {
+      __typename
+      tag
+      title
+      text
+      highlight
+    }
+    accessLabel
+    accessText
+  }
+  areas {
+    __typename
+    title
+    text
+    requiredTitle
+    required {
+      __typename
+      label
+      text
+    }
+    optionalTitle
+    optional {
+      __typename
+      label
+      text
+    }
+  }
+  process {
+    __typename
+    title
+    steps {
+      __typename
+      step
+      title
+      text
+    }
+  }
+  faq {
+    __typename
+    title
+    items {
+      __typename
+      question
+      answer
+      id
+      category
+    }
+  }
+}
+
+fragment UeberMichParts on UeberMich {
+  __typename
+  seoTitle
+  seoDescription
+  breadcrumb
+  image
+  imageAlt
+  contactTitle
+  mlpLinkText
+  eyebrow
+  title
+  text
+  specializationTitle
+  specializations
+  activityTitle
+  activityText
+  button
+  topicsTitle
+  personal {
+    __typename
+    image
+    imageAlt
+    title
+    text
+  }
+}
+
+fragment KontaktParts on Kontakt {
+  __typename
+  seoTitle
+  seoDescription
+  breadcrumb
+  title
+  intro
+  bookingTitle
+  bookingText
+  bookingButton
+  phoneTitle
+  emailTitle
+  emailNote
+  officeTitle
+  officeNote
+  profileTitle
+  profileLinkText
+}
+
+fragment RechtstextParts on Rechtstext {
+  __typename
+  order
+  seoTitle
+  seoDescription
+  breadcrumb
+  title
+  warningTitle
+  warningText
+  sections {
+    __typename
+    heading
+    style
+    bausteine {
+      __typename
+      ... on RechtstextSectionsBausteineAbsatz {
+        text
+      }
+      ... on RechtstextSectionsBausteineAnschrift {
+        lines
+        boldFirstLine
+      }
+    }
+  }
+}
+
+fragment RechnerParts on Rechner {
+  __typename
+  eyebrow
+  title
+  subtitle
+  tabBu
+  tabWealth
+  disclaimer
+  wealth {
+    __typename
+    monthlyLabel
+    yearsLabel
+    rateLabel
+    investedLabel
+    gainLabel
+    totalLabel
+    chartStart
+    chartEnd
+    legendInvested
+    legendGrowth
+  }
+  bu {
+    __typename
+    incomeLabel
+    statusLegend
+    statusStudium
+    statusAngestellt
+    statusSelbststaendig
+    needLabel
+    coverLabel
+    gapLabel
+    textStudium
+    textAngestellt
+    textSelbststaendig
+    button
+  }
+}

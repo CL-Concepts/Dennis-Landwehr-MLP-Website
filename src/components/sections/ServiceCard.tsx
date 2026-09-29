@@ -2,6 +2,7 @@ import Link from "next/link";
 import BookingLink from "@/components/ui/BookingLink";
 import ServiceIcon, { type IconName } from "@/components/ui/ServiceIcon";
 import type { Service } from "@/config/services";
+import { settings } from "@/lib/content";
 
 type ServiceCardProps = {
   service: Service;
@@ -58,7 +59,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
           </svg>
         </Link>
         <BookingLink source="services" variant="secondary" size="sm" fullWidth>
-          Termin vereinbaren
+          {settings.buttons.serviceCard}
         </BookingLink>
       </div>
     </article>

@@ -3,9 +3,11 @@ import { siteConfig } from "@/config/site";
 import { footerNav } from "@/config/navigation";
 import { legalTexts } from "@/content/legal";
 import BookingLink from "@/components/ui/BookingLink";
+import { settings } from "@/lib/content";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const f = settings.footer;
 
   return (
     <footer className="bg-navy text-white mt-auto" role="contentinfo">
@@ -16,13 +18,13 @@ export default function Footer() {
             <p className="font-bold text-lg mb-1">{siteConfig.name}</p>
             <p className="text-blue-200 text-sm mb-4">{siteConfig.professionalTitle}</p>
             <BookingLink source="final-cta" variant="secondary" size="sm">
-              Jetzt Termin vereinbaren
+              {f.bookingButton}
             </BookingLink>
           </div>
 
           {/* Spalte 2: Kontakt */}
           <div>
-            <p className="font-semibold mb-3 text-blue-100">Kontakt</p>
+            <p className="font-semibold mb-3 text-blue-100">{f.contactTitle}</p>
             <ul className="space-y-2 text-sm text-blue-200">
               <li>
                 <a
@@ -50,7 +52,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-sm text-blue-200 hover:text-white transition-colors underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus rounded"
               >
-                MLP-Beraterprofil ansehen
+                {f.mlpLinkText}
                 <span className="sr-only">(öffnet in neuem Tab)</span>
               </a>
             </div>
@@ -58,7 +60,7 @@ export default function Footer() {
 
           {/* Spalte 3: Rechtliches */}
           <div>
-            <p className="font-semibold mb-3 text-blue-100">Rechtliches</p>
+            <p className="font-semibold mb-3 text-blue-100">{f.legalTitle}</p>
             <ul className="space-y-2">
               {footerNav.legal.map((item) => (
                 <li key={item.href}>
@@ -77,7 +79,7 @@ export default function Footer() {
         <div className="border-t border-blue-800 pt-6 space-y-2">
           <p className="text-xs text-blue-300">{legalTexts.personalSite}</p>
           <p className="text-xs text-blue-400">
-            &copy; {currentYear} {siteConfig.name} – Alle Rechte vorbehalten.
+            &copy; {currentYear} {siteConfig.name} – {f.copyright}
           </p>
         </div>
       </div>
